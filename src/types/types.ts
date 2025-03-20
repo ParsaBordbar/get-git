@@ -5,10 +5,10 @@ export interface tagType {
 
 export interface cardType {
     title: string, 
-    desc: string, 
+    desc?: string, 
     kind: string, 
-    tags: [tagType], 
+    tags: tagType[], 
     icon: string, 
-    imgUrl: string,
+    imgUrl?: string,
     style: string,
 }
