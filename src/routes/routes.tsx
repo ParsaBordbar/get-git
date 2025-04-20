@@ -14,6 +14,7 @@ interface Route {
   }
   
 export const routes: Route[] = [
+    { path: '/', Component: Git },
     { path: '/git', Component: Git },
     { path: '/git/basics', Component: Basics },
     { path: '/git/commit', Component: Commit },
