@@ -16,6 +16,12 @@ export interface cardType {
     imgUrl?: string,
     code?: copyType[],
     style: string,
+    animate? : boolean,
+}
+
+export interface navigationType {
+    next?: string,
+    prev?: string,
 }
 
 export interface ReactionButtonType {

@@ -4,6 +4,7 @@ import Basics from "../pages/Basics";
 import Commit from "../pages/Commit";
 import Git from "../pages/Git";
 import Changes from "../pages/Changes";
+import Branches from "../pages/Branches";
 
 interface Route {
     path: string;
@@ -17,4 +18,5 @@ export const routes: Route[] = [
     { path: '/git/basics', Component: Basics },
     { path: '/git/commit', Component: Commit },
     { path: '/git/changes', Component: Changes },
+    { path: '/git/branches', Component: Branches },
 ];
