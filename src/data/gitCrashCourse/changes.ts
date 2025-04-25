@@ -291,6 +291,10 @@ Includes commit message, author, date, and code changes.`,
                 text:'git restore .',
                 label: 'Restoring the Entire Repo:',
             },
+            {
+                text: 'git reset --soft HEAD~1',
+                label: "From Commit to stage:"
+            }
         ]
       },
 ]
