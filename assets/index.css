@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: poppins;
+  src: url('/assets/fonts/Poppins-Black.ttf');
+}
+
+@font-face {
+  font-family: rubik;
+  src: url('/assets/fonts/Rubik-VariableFont_wght.ttf');
+}
+
+
+:root {
+  font-family: rubik, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #FEF5CC;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #1747E7;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #1747E7;
+}
+
+
+/* Candy Theme */
+@theme {
+  --color-candy-red: #F75B2B;
+  --color-candy-yellow: #FFE87E;
+  --color-candy-yellow-sharp: #F7BD1D;
+  --color-candy-yellow-warm: #FAD966;
+  --color-candy-blue: #1747E7;
+  --color-candy-teal: #04BFA4;
+  --color-candy-blue-sky: #C5C6FF;
+  --color-candy-tan: #FEF5CC;
+  --color-candy-green-light: #6CBD45;
+  --color-candy-pink:#FFA9E8;
+  --color-candy-pink-strawberry: #FF829D;
+  --color-candy-green-M: #7B9D7C;
+  --color-candy-milky: #FEE9E8;
+}
+
+
+/* Arctic Theme */
+@theme {
+  --color-arctic-black: #040404;
+  --color-arctic-white: #F9F9F9;
+}
