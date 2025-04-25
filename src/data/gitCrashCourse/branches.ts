@@ -17,7 +17,7 @@ export const branches = [
           url: 'smt'
         }
       ], 
-      icon:  '/src/assets/git.svg', 
+      icon:  '/assets/git.svg', 
       imgUrl:  '',
       style: 'bg-candy-pink-strawberry',
     },
@@ -53,7 +53,7 @@ Parallel Development.
           url: 'smt'
         }
       ], 
-      icon:  '/src/assets/git.svg', 
+      icon:  '/assets/git.svg', 
       imgUrl:  '',
       style: 'bg-candy-blue-sky',
     },
@@ -74,7 +74,7 @@ Parallel Development.
           url: 'smt'
         }
       ], 
-      icon:  '/src/assets/git.svg', 
+      icon:  '/assets/git.svg', 
       code: [
         {
           text:'git branch <new_branch>',
@@ -104,7 +104,7 @@ Parallel Development.
           url: 'smt'
         }
       ], 
-      icon:  '/src/assets/git.svg', 
+      icon:  '/assets/git.svg', 
       code: [
         {
           text:'git checkout <branch_name>',
@@ -120,7 +120,7 @@ Parallel Development.
     {
       title: 'Difference Between Switch & Checkout', 
       desc:  `git switch for straightforward branch operations to benefit from its clarity and safety, and reserve git checkout for more advanced tasks like checking out commits or restoring files`,
-      icon:  '/src/assets/git.svg', 
+      icon:  '/assets/git.svg', 
       imgUrl:  '',
       style: 'bg-candy-teal',
       kind: 'reaction'

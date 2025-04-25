@@ -1,7 +1,5 @@
 import { motion, useScroll } from "framer-motion";
 import { useState, useEffect } from "react";
-import clockIcon from '/src/assets/clock.svg';
-import cardIcon from '/src/assets/card.svg';
 
 const Abstract = ({ count }: {count: number}) => {
   const { scrollYProgress } = useScroll();
@@ -20,7 +18,7 @@ const Abstract = ({ count }: {count: number}) => {
         id="scroll-indicator"
         style={{
           scaleY: scrollYProgress,
-          position: "absolute",        
+          position: "absolute",
           top: screenHeight / count,       
           height: screenHeight * 0.4,
           width: 14,
@@ -32,11 +30,11 @@ const Abstract = ({ count }: {count: number}) => {
       <ul className="flex flex-col text-[#000022] relative text-center font-semibold mt-28 px-5 rounded-2xl border-b-stone-850
         border-t-4 py-1 border-x-2 border-2 border-b-[6px] bg-[#FC2865]" style={{top: screenHeight / count - 185}}>
         <li className="flex gap-1 justify-center items-center">
-          <img className="size-4" src={cardIcon} alt="" />
+          <img className="size-4" src={'/assets/card.svg'} alt="" />
           <p>{count} cards</p>
         </li>
         <li className="flex gap-1 justify-center items-center">
-          <img className="size-5" src={clockIcon} alt="" />
+          <img className="size-5" src={'/assets/clock.svg'} alt="" />
           <p>{Math.floor(count * 1.2)} mins</p>
         </li>
       </ul>
