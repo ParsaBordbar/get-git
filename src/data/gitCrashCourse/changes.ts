@@ -77,7 +77,7 @@ Files in Git can be in **two stages**:
     {
         title: 'Staged Files',  
         kind:  'reaction',
-        desc: `Staged files are files that are ready to be committed to the repository you are working on. We discussed more about staging in [this CardSet](http://localhost:5173/git/basics)!`,
+        desc: `Staged files are files that are ready to be committed to the repository you are working on. We discussed more about staging in [this CardSet](http://localhost:5173/get-git/basics)!`,
         tags: [
             {
             text: 'git',
@@ -138,7 +138,7 @@ Files in Git can be in **two stages**:
     
  &nbsp;
 
- -Displays [commit hashes](http://localhost:5173/git/commit), author, date, and [messages](http://localhost:5173/git/commit).`,
+ -Displays [commit hashes](http://localhost:5173/get-git/commit), author, date, and [messages](http://localhost:5173/get-git/commit).`,
         tags: [
             {
             text: 'git',
