@@ -7,5 +7,6 @@ export default defineConfig({
     tailwindcss(),
     react(),
   ],
+   base: '/get-git/'
 })
 
