@@ -1,8 +1,12 @@
+![ChatGPT Image Apr 25, 2025, 03_27_13 PM](https://github.com/user-attachments/assets/7b47e4a7-9625-4917-b85f-e07289839948)
+
+
 # Get-Git
-
+![image](https://github.com/user-attachments/assets/2c9215a7-e021-43a4-8724-72350a6893fd)
 Get-Git is an open‑source React application that offers both a cheat sheet and flashcards to help you learn and refresh your Git knowledge. It’s a sub‑project of a broader open‑source learning platform focused on teaching the 20% of a topic you need for 80% of real‑world workflows.
+You can read it from its GithubPages, [here](https://parsabordbar.github.io/get-git/)
 
-## Features
+## Featured Flash Card Series
 
 - **Git Basics**: Daily workflow commands like `git status`, `git add`, `git commit`, and `git push`
 - **Git Changes**: Inspecting changes with `git status`, `git log`, `git diff`, and `git restore`
@@ -11,7 +15,7 @@ Get-Git is an open‑source React application that offers both a cheat sheet and
 - **GitHub** *(Coming Soon)*: Repository management, `git pull`, cloning, and contributing
 - **Conflicts** *(Coming Soon)*: Handling merge conflicts and a simple introduction to rebasing
 
-## Usage
+## Local Usage
 
 1. **Clone the repo**:
    ```bash
@@ -28,7 +32,7 @@ Get-Git is an open‑source React application that offers both a cheat sheet and
    ```
 4. **Explore** the cheat sheets and flashcards in your browser at `http://localhost:3000`.
 
-## Folder Structure
+## Dirctory Structure
 
 - `/src` — React source code
 - `/public` — Static assets
