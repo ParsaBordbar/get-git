@@ -50,6 +50,12 @@ Contributions are welcome! Please keep in mind:
 This project is licensed under the [Creative Commons Attribution‑NonCommercial‑ShareAlike 4.0 International License](LICENSE).
 
 ---
+###### Incomiming Releasses:
+
+- Improvments for Responsiveness
+- Customazation + New Features
+- Dokcer Container for local usage
+
 
 *Happy Git learning!*
 
