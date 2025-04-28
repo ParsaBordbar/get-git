@@ -2,12 +2,12 @@
 
 @font-face {
   font-family: poppins;
-  src: url('/assets/fonts/Poppins-Black.ttf');
+  src: url('./assets/fonts/Poppins-Black.ttf');
 }
 
 @font-face {
   font-family: rubik;
-  src: url('/assets/fonts/Rubik-VariableFont_wght.ttf');
+  src: url('./assets/fonts/Rubik-VariableFont_wght.ttf');
 }
 
 

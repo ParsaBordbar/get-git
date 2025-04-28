@@ -17,7 +17,7 @@ export const basics = [
           url: 'smt'
         }
       ], 
-      icon:  '/assets/git.svg', 
+      icon:  './assets/git.svg', 
       imgUrl:  '',
       style: 'bg-[#F75B2B]',
     },
@@ -44,7 +44,7 @@ export const basics = [
           url: 'smt'
         }
       ], 
-      icon:  '/assets/git.svg', 
+      icon:  './assets/git.svg', 
       imgUrl:  '',
       style: 'bg-[#04BFA4]',
     },
@@ -65,7 +65,7 @@ export const basics = [
           url: 'smt'
         }
       ], 
-      icon:  '/assets/git.svg', 
+      icon:  './assets/git.svg', 
       code: [
         {
           text:'sudo apt install git',
@@ -96,7 +96,7 @@ export const basics = [
           url: 'smt'
         }
       ], 
-      icon:  '/assets/git.svg', 
+      icon:  './assets/git.svg', 
       code: [
         {
           text:'git config --global user.name "Your Name"',
@@ -126,8 +126,8 @@ export const basics = [
           url: 'smt'
         }
       ], 
-      icon:  '/assets/git.svg', 
-      imgUrl:  '/assets/stages.png',
+      icon:  './assets/git.svg', 
+      imgUrl:  './assets/stages.png',
       style: 'bg-[#7B9D7C]',
     },
     {
@@ -153,7 +153,7 @@ export const basics = [
           url: 'smt'
         }
       ], 
-      icon:  '/assets/git.svg', 
+      icon:  './assets/git.svg', 
       imgUrl:  '',
       style: 'bg-[#FFE87E]',
     },
@@ -180,7 +180,7 @@ export const basics = [
           url: 'smt'
         }
       ], 
-      icon:  '/assets/git.svg', 
+      icon:  './assets/git.svg', 
       imgUrl:  '',
       style: 'bg-[#04BFA4]',
     },
@@ -207,7 +207,7 @@ export const basics = [
           url: 'smt'
         }
       ], 
-      icon:  '/assets/git.svg', 
+      icon:  './assets/git.svg', 
       imgUrl:  '',
       style: 'bg-[#C5C6FF]',
     },
@@ -234,7 +234,7 @@ export const basics = [
           url: 'smt'
         }
       ], 
-      icon:  '/assets/git.svg', 
+      icon:  './assets/git.svg', 
       imgUrl:  '',
       style: 'bg-[#F7BD1D]',
     },
@@ -268,7 +268,7 @@ export const basics = [
           url: 'smt'
         }
       ], 
-      icon:  '/assets/git.svg', 
+      icon:  './assets/git.svg', 
       style: 'bg-[#7B9D7C]',
     },
   ]

@@ -17,7 +17,7 @@ export const committing = [
             url: 'smt'
           }
         ], 
-        icon:  '/assets/git.svg', 
+        icon:  './assets/git.svg', 
         imgUrl:  '',
         style: 'bg-[#7B9D7C]',
       },
@@ -55,7 +55,7 @@ export const committing = [
             url: 'smt'
           }
         ], 
-        icon:  '/assets/git.svg', 
+        icon:  './assets/git.svg', 
         imgUrl:  '',
         style: 'bg-candy-yellow-sharp',
       },
@@ -98,8 +98,8 @@ export const committing = [
             url: 'smt'
           }
         ], 
-        icon:  '/assets/git.svg', 
-        // imgUrl: '/assets/commitEx.png',
+        icon:  './assets/git.svg', 
+        // imgUrl: './assets/commitEx.png',
         style: 'bg-candy-green-light',
       },
 
@@ -123,7 +123,7 @@ export const committing = [
             url: 'smt'
           }
         ], 
-        icon:  '/assets/git.svg', 
+        icon:  './assets/git.svg', 
         imgUrl:  '',
         style: 'bg-candy-green-light',
       },
@@ -153,7 +153,7 @@ export const committing = [
             url: 'smt'
           }
         ], 
-        icon:  '/assets/git.svg', 
+        icon:  './assets/git.svg', 
         imgUrl:  '',
         style: 'bg-candy-blue-sky',
       },
@@ -187,7 +187,7 @@ export const committing = [
             url: 'smt'
           }
         ], 
-        icon:  '/assets/git.svg', 
+        icon:  './assets/git.svg', 
         imgUrl:  '',
         style: 'bg-candy-red',
       },
@@ -224,7 +224,7 @@ export const committing = [
             url: 'smt'
           }
         ], 
-        icon:  '/assets/git.svg', 
+        icon:  './assets/git.svg', 
         imgUrl:  '',
         style: 'bg-candy-teal',
       },
@@ -260,20 +260,20 @@ export const committing = [
             url: 'smt'
           }
         ], 
-        icon:  '/assets/git.svg', 
+        icon:  './assets/git.svg', 
         imgUrl:  '',
         style: 'bg-candy-yellow',
       },
       {
         title: 'Footer',
-        icon:  '/assets/git.svg', 
+        icon:  './assets/git.svg', 
         style: 'bg-candy-pink',
         kind:  'reaction',
         desc: "In the footer you can have different optional comments that we'll go through.",
       },
       {
         title: 'Refs',
-        icon:  '/assets/git.svg', 
+        icon:  './assets/git.svg', 
         style: 'bg-candy-blue',
         desc: `We can reference **Issues** & certain commits using **#**.`,
         code: [
@@ -293,7 +293,7 @@ export const committing = [
       },
       {
         title: 'Co Authored',
-        icon:  '/assets/git.svg', 
+        icon:  './assets/git.svg', 
         style: 'bg-candy-yellow-sharp',
         desc: `**Co-authored-by**: If multiple people contributed to the commit, their contributions are acknowledged here in the footer.`,
         code: [
@@ -313,7 +313,7 @@ export const committing = [
       },
       {
         title: 'Refs',
-        icon:  '/assets/git.svg', 
+        icon:  './assets/git.svg', 
         style: 'bg-candy-blue-sky',
         desc: `We can reference **Issues** & certain commits using **#**.`,
         code: [

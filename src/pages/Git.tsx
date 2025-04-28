@@ -7,28 +7,28 @@ function Git() {
         <div className='col-span-4'>
           <a href="/get-git/basics">
             <Card animate={false} title={'1. Basics'} desc="Stuff you'll use every day." kind={'default'} 
-              icon={'/assets/git.svg'} style={'bg-candy-red'} />
+              icon={'./assets/git.svg'} style={'bg-candy-red'} />
           </a>
           <a href="/get-git/branches">
             <Card animate={false} title={'4. Branches'} kind={'default'} desc="Learn about branching."
-              icon={'/assets/git.svg'} style={'bg-candy-teal'} />
+              icon={'./assets/git.svg'} style={'bg-candy-teal'} />
           </a>
           </div>
         <div className='col-span-4'>
           <a href="/get-git/changes">
             <Card animate={false} title={'2. Changes'} desc="Keep track of the changes." kind={'default'} 
-              icon={'/assets/git.svg'} style={'bg-candy-blue-sky'} />          
+              icon={'./assets/git.svg'} style={'bg-candy-blue-sky'} />          
           </a>
           <Card animate={false} title={'5. Github'} kind={'default'} desc="Collaborations and Cloud storage."
-            icon={'/assets/github.svg'} style={'bg-candy-yellow-sharp'} />
+            icon={'./assets/github.svg'} style={'bg-candy-yellow-sharp'} />
         </div>
         <div className='col-span-4'>
         <a href="/get-git/commit">
           <Card animate={false} title={'3. Commit'} kind={'default'} desc="How to write good commit messages."
-            icon={'/assets/git.svg'} style={'bg-candy-blue'} />
+            icon={'./assets/git.svg'} style={'bg-candy-blue'} />
         </a>
         <Card animate={false} title={'6. Conflicts'} kind={'default'} desc="Oops! what should we do!?" 
-          icon={'/assets/git.svg'} style={'bg-candy-yellow'} />
+          icon={'./assets/git.svg'} style={'bg-candy-yellow'} />
         </div>
       </div>
     </section>

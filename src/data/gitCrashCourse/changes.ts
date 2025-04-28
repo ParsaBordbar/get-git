@@ -17,7 +17,7 @@ export const changes = [
             url: 'smt'
             }
         ], 
-        icon:  '/assets/git.svg', 
+        icon:  './assets/git.svg', 
         imgUrl:  '',
         style: 'bg-candy-yellow',
     },
@@ -48,7 +48,7 @@ Files in Git can be in **two stages**:
             url: 'smt'
             }
         ], 
-        icon:  '/assets/git.svg', 
+        icon:  './assets/git.svg', 
         imgUrl:  '',
         style: 'bg-candy-blue-sky',
     },
@@ -70,8 +70,8 @@ Files in Git can be in **two stages**:
             url: 'smt'
             }
         ], 
-        icon:  '/assets/git.svg', 
-        imgUrl:  '/assets/status.png',
+        icon:  './assets/git.svg', 
+        imgUrl:  './assets/status.png',
         style: 'bg-candy-yellow-sharp',
     },
     {
@@ -92,8 +92,8 @@ Files in Git can be in **two stages**:
             url: 'smt'
             }
         ], 
-        icon:  '/assets/git.svg', 
-        imgUrl:  '/assets/status.png',
+        icon:  './assets/git.svg', 
+        imgUrl:  './assets/status.png',
         style: 'bg-candy-teal',
     },
     {
@@ -119,7 +119,7 @@ Files in Git can be in **two stages**:
             url: 'smt'
           }
         ], 
-        icon:  '/assets/git.svg', 
+        icon:  './assets/git.svg', 
         imgUrl:  '',
         style: 'bg-candy-pink',
       },
@@ -128,7 +128,7 @@ Files in Git can be in **two stages**:
         desc: `So you proudly Committed your code but you wanna see what have you committed until   now how you can see what have been done? `,
         kind: 'reaction',
         style: 'bg-candy-red',
-        icon:  '/assets/git.svg',
+        icon:  './assets/git.svg',
       },
     {
         title: 'Git Log',  
@@ -153,7 +153,7 @@ Files in Git can be in **two stages**:
             url: 'smt',
             }
         ],
-        icon:  '/assets/git.svg', 
+        icon:  './assets/git.svg', 
         style: 'bg-candy-green-light',
         code: [
             {
@@ -196,7 +196,7 @@ Displays detailed information about a **specific** commit.
 Includes commit message, author, date, and code changes.`,
         kind: 'reaction',
         style: 'bg-candy-green-M',
-        icon:  '/assets/git.svg',
+        icon:  './assets/git.svg',
         code: [
             {   label: '',
                 text: 'git show <commit-hash>'
@@ -224,7 +224,7 @@ Includes commit message, author, date, and code changes.`,
         `,
         kind: 'reaction',
         style: 'bg-candy-yellow-warm',
-        icon:  '/assets/git.svg',
+        icon:  './assets/git.svg',
         code: [
             {   label: 'Compare working directory with last committed version:',
                 text: 'git diff'
@@ -258,7 +258,7 @@ Includes commit message, author, date, and code changes.`,
         desc: `So ... how we can Ctrl + z when we messed-up ?
         `,
         style: 'bg-candy-blue-sky',
-        icon:  '/assets/git.svg',
+        icon:  './assets/git.svg',
       },
 
       {
@@ -281,7 +281,7 @@ Includes commit message, author, date, and code changes.`,
         desc: `We can **restore** a file or multiple files to previous committed versions.
         `,
         style: 'bg-candy-teal',
-        icon:  '/assets/git.svg',
+        icon:  './assets/git.svg',
         code: [
             {
                 text:'git restore <file>',

@@ -30,11 +30,11 @@ const Abstract = ({ count }: {count: number}) => {
       <ul className="flex flex-col text-[#000022] relative text-center font-semibold mt-28 px-5 rounded-2xl border-b-stone-850
         border-t-4 py-1 border-x-2 border-2 border-b-[6px] bg-[#FC2865]" style={{top: screenHeight / count - 185}}>
         <li className="flex gap-1 justify-center items-center">
-          <img className="size-4" src={'/assets/card.svg'} alt="" />
+          <img className="size-4" src={'./assets/card.svg'} alt="" />
           <p>{count} cards</p>
         </li>
         <li className="flex gap-1 justify-center items-center">
-          <img className="size-5" src={'/assets/clock.svg'} alt="" />
+          <img className="size-5" src={'./assets/clock.svg'} alt="" />
           <p>{Math.floor(count * 1.2)} mins</p>
         </li>
       </ul>
