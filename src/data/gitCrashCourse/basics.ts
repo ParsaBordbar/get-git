@@ -72,6 +72,10 @@ export const basics = [
           label: 'Debian Base Linux:'
         },
         {
+          text:'sudo pacman -S git',
+          label: 'Arch Base Linux:'
+        },
+        {
           text:'brew install git',
           label: 'Mac Os:'
         },
