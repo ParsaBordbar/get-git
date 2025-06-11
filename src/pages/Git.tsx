@@ -19,16 +19,20 @@ function Git() {
             <Card animate={false} title={'2. Changes'} desc="Keep track of the changes." kind={'default'} 
               icon={'./assets/git.svg'} style={'bg-candy-blue-sky'} />          
           </a>
-          <Card animate={false} title={'5. Github'} kind={'default'} desc="Collaborations and Cloud storage."
-            icon={'./assets/github.svg'} style={'bg-candy-yellow-sharp'} />
+          <a href="/get-git/github">
+            <Card animate={false} title={'5. Github'} kind={'default'} desc="Collaborations and Cloud storage."
+              icon={'./assets/github.svg'} style={'bg-candy-yellow-sharp'} />
+          </a>
         </div>
         <div className='col-span-4'>
         <a href="/get-git/commit">
           <Card animate={false} title={'3. Commit'} kind={'default'} desc="How to write good commit messages."
             icon={'./assets/git.svg'} style={'bg-candy-blue'} />
         </a>
-        <Card animate={false} title={'6. Conflicts'} kind={'default'} desc="Oops! what should we do!?" 
-          icon={'./assets/git.svg'} style={'bg-candy-yellow'} />
+        <a href="/get-git/conflicts">
+          <Card animate={false} title={'6. Conflicts'} kind={'default'} desc="Oops! what should we do!?" 
+            icon={'./assets/git.svg'} style={'bg-candy-yellow'} />
+        </a>
         </div>
       </div>
     </section>
