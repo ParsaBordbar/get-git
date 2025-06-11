@@ -40,9 +40,13 @@ You can connect both to **push** or **pull** changes.`,
     kind: 'reaction',
     code: [
       {
-        label: 'Clone a repo:',
+        label: 'Using https:',
         text: 'git clone https://github.com/user/repo.git'
-      }
+      },
+      {
+        label: 'Using SSH Key:',
+        text: 'git clone git@github.com:user/repo.git'
+      },
     ],
     tags: [
       { text: 'git', url: 'smt' },
@@ -136,7 +140,55 @@ Write it in **Markdown**, and GitHub will render it beautifully on your repo’s
       { text: 'markdown', url: 'smt' }
     ],
     icon: './assets/github.svg',
-    imgUrl: './assets/readme-example.png',
+    imgUrl: './assets/readme.png',
     style: 'bg-[#7B9D7C]',
-  }
+  },
+  {
+    title: 'Markdown: Headings',
+    kind: 'reaction',
+    desc: `Use \`#\` to create headings in README files.\n\nMarkdown supports 6 levels of headings:\n\n\`\`\`md\n# H1\n## H2\n### H3\n#### H4\n##### H5\n###### H6\n\`\`\`\n\n**Tip**: Use headings to organize content in your GitHub README.`,
+    tags: [
+      { text: 'markdown', url: 'smt' },
+      { text: 'readme', url: 'smt' },
+      { text: 'github', url: 'smt' }
+    ],
+    icon: './assets/md.svg',
+    style: 'bg-[#96D38C]',
+  },
+  {
+    title: 'Markdown: Code Blocks',
+    kind: 'reaction',
+    desc: `Use backticks to write code:\n\n- Inline: \`const x = 10;\`\n- Multi-line:\n\n\`\`\`js\nfunction greet() {\n  console.log("Hello!");\n}\n\`\`\`\n\nSupports many languages like \`js\`, \`bash\`, \`python\`, etc.`,
+    tags: [
+      { text: 'markdown', url: 'smt' },
+      { text: 'code', url: 'smt' },
+      { text: 'github', url: 'smt' }
+    ],
+    icon: './assets/md.svg',
+    style: 'bg-[#FFD580]',
+  },
+  {
+    title: 'Markdown: Links & Images',
+    kind: 'reaction',
+    desc: `Create clickable links:\n\n\`[OpenAI](https://openai.com)\`\n\nEmbed images:\n\n\`![Alt text](image-url)\`\n\n**Tip**: Use relative paths for images inside the repo.`,
+    tags: [
+      { text: 'markdown', url: 'smt' },
+      { text: 'readme', url: 'smt' },
+      { text: 'github', url: 'smt' }
+    ],
+    icon: './assets/md.svg',
+    style: 'bg-[#A2C2E2]',
+  },
+  {
+    title: 'Markdown: Lists & Checkboxes',
+    kind: 'reaction',
+    desc: `Unordered List:\n- Item A\n- Item B\n\nOrdered List:\n1. Step one\n2. Step two\n\nCheckboxes:\n- [x] Done\n- [ ] Not done\n\nGreat for task lists in PRs and issues.`,
+    tags: [
+      { text: 'markdown', url: 'smt' },
+      { text: 'readme', url: 'smt' },
+      { text: 'github', url: 'smt' }
+    ],
+    icon: './assets/md.svg',
+    style: 'bg-candy-green-light',
+  },
 ];
