@@ -19,7 +19,7 @@ export const basics = [
       ], 
       icon:  './assets/git.svg', 
       imgUrl:  '',
-      style: 'bg-[#F75B2B]',
+      style: 'bg-candy-blue-sky',
     },
     {
       title: 'What Is Git?', 
