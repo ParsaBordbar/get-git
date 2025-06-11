@@ -6,7 +6,7 @@ function Branches() {
     <section className="col-span-full flex justify-center items-center w-full lg:contain-none 
     md:contain-content contain-none">
         <FlashCardSeries data={branches} 
-                navigation={{prev:"commit", next:"/get-git/"}}
+                navigation={{prev:"commit", next:"github"}}
         />
     </section>
   )
