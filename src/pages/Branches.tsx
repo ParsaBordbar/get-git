@@ -5,7 +5,7 @@ function Branches() {
   return (
     <section className="col-span-full flex justify-center items-center w-full lg:contain-none 
     md:contain-content contain-none">
-        <FlashCardSeries data={branches} 
+        <FlashCardSeries data={branches.cards} 
                 navigation={{prev:"commit", next:"github"}}
         />
     </section>
