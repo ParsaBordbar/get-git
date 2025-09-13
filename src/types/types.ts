@@ -7,6 +7,12 @@ export interface copyType {
     label?: string,
     text: string,
 }
+
+export interface flashCardSeries {
+    pageName: string,
+    cards: cardType[],
+}
+
 export interface cardType {
     title: string, 
     desc?: string, 
