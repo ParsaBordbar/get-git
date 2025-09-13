@@ -1,45 +1,54 @@
-import { motion, useScroll } from "framer-motion";
-import { useState, useEffect } from "react";
+import { motion, useScroll } from "framer-motion"
+import { useState, useEffect } from "react"
 
-const Abstract = ({ count }: {count: number}) => {
-  const { scrollYProgress } = useScroll();
-  
-  const [screenHeight, setScreenHeight] = useState(window.innerHeight);
+type AbstractProps = {
+  count: number
+}
+
+const Abstract = ({ count }: AbstractProps) => {
+  const { scrollYProgress } = useScroll()
+
+  const [screenHeight, setScreenHeight] = useState<number>(0)
   useEffect(() => {
-    const handleResize = () => setScreenHeight(window.innerHeight);
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+    const updateHeight = () => setScreenHeight(window.innerHeight)
+    updateHeight()
+    window.addEventListener("resize", updateHeight)
+    return () => window.removeEventListener("resize", updateHeight)
+  }, [])
 
   return (
-    <div className="fixed flex flex-col items-center rounded-full -mx-[500px]">
+    <div
+      className="fixed left-2 sm:left-6 md:left-12 top-0 flex flex-col items-center hidden md:flex my-2"
+      style={{ height: screenHeight }}
+    >
+      <div
+        className="mt-12 sm:mt-20 flex flex-col items-center gap-2 px-3 py-2 
+        text-[#000022] text-sm sm:text-base md:text-lg font-semibold
+        rounded-2xl border-t-4 border-x-2 border-b-[6px] border-stone-850 
+        bg-[#FC2865] shadow-md"
+      >
+        <div className="flex gap-2 items-center">
+          <img className="size-4 sm:size-5" src="./assets/card.svg" alt="Cards" />
+          <p>{count} cards</p>
+        </div>
+        <div className="flex gap-2 items-center">
+          <img className="size-4 sm:size-5" src="./assets/clock.svg" alt="Time" />
+          <p>{Math.floor(count * 1.2)} mins</p>
+        </div>
+      </div>
+
       <motion.div
-      className="rounded-full border-2 border-stone-800 border-l-3 border-b-4"
+        className="rounded-full bg-blue-500 border-2 border-stone-800"
         id="scroll-indicator"
         style={{
           scaleY: scrollYProgress,
-          position: "absolute",
-          top: screenHeight / count,       
           height: screenHeight * 0.4,
           width: 14,
           originY: 0,
-          zIndex: 10,
-          backgroundColor: "#4C91ED",
         }}
       />
-      <ul className="flex flex-col text-[#000022] relative text-center font-semibold mt-28 px-5 rounded-2xl border-b-stone-850
-        border-t-4 py-1 border-x-2 border-2 border-b-[6px] bg-[#FC2865]" style={{top: screenHeight / count - 185}}>
-        <li className="flex gap-1 justify-center items-center">
-          <img className="size-4" src={'./assets/card.svg'} alt="" />
-          <p>{count} cards</p>
-        </li>
-        <li className="flex gap-1 justify-center items-center">
-          <img className="size-5" src={'./assets/clock.svg'} alt="" />
-          <p>{Math.floor(count * 1.2)} mins</p>
-        </li>
-      </ul>
     </div>
-  );
-};
+  )
+}
 
-export default Abstract;
+export default Abstract
