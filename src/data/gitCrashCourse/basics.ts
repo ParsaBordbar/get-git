@@ -1,4 +1,6 @@
-export const basics = [
+export const basics = {
+  pageName : "Basics",
+  cards: [
     {
       title: 'Git Crash Course',  
       kind:  'default',
@@ -276,3 +278,4 @@ export const basics = [
       style: 'bg-[#7B9D7C]',
     },
   ]
+}

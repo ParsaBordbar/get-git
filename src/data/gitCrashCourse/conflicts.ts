@@ -1,6 +1,8 @@
-import { cardType } from "../../types/types";
+import { flashCardSeries } from "../../types/types";
 
-export const gitConflictCard: cardType[] = [
+export const gitConflictCard: flashCardSeries = {
+  pageName: 'gitConflictCard',
+  cards:[
   {
     title: 'What Is a Git Conflict?',
     desc: `A **Git conflict** occurs when two branches have changes to the same lines in a file, and Git cannot automatically merge them.
@@ -53,11 +55,7 @@ export const gitConflictCard: cardType[] = [
     desc: `Git adds **conflict markers** in files to show conflicting code. Example:
 
 \`\`\`
-<<<<<<< HEAD
-Your version
-=======
 Their version
->>>>>>> other-branch
 \`\`\`
 
 You need to **edit the file manually** and choose the correct content.`,
@@ -155,4 +153,5 @@ You'll hit a conflict — now practice resolving it!`,
     icon: './assets/git.svg',
     style: 'bg-[#FFE87E]',
   }
-];
+]
+}

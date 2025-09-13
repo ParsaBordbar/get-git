@@ -1,4 +1,7 @@
-export const changes = [
+export const changes = {
+    pageName: "changes",
+    cards: 
+    [
     {
         title: 'Changes',  
         kind:  'reaction',
@@ -298,4 +301,4 @@ Includes commit message, author, date, and code changes.`,
         ]
       },
 ]
-
+}

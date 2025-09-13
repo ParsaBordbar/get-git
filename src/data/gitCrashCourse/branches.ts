@@ -1,4 +1,6 @@
-export const branches = [
+export const branches = {
+  pageName: "branches",
+  cards: [
     {
       title: 'Branches',  
       kind:  'default',
@@ -127,3 +129,4 @@ Parallel Development.
     },
     
   ]
+}

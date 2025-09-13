@@ -1,6 +1,8 @@
-import { cardType } from "../../types/types";
+import { flashCardSeries } from "../../types/types";
 
-export const gitGithubConcepts: cardType[] = [
+export const gitGithubConcepts: flashCardSeries = {
+  pageName: 'gitGithubConcepts',
+  cards: [
   {
     title: 'What Is GitHub?',
     desc: `**[GitHub](github.com)** is a cloud-based hosting service for Git repositories.  
@@ -191,4 +193,5 @@ Write it in **Markdown**, and GitHub will render it beautifully on your repo’s
     icon: './assets/md.svg',
     style: 'bg-candy-green-light',
   },
-];
+]
+}

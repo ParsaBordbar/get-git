@@ -1,4 +1,6 @@
-export const committing = [
+export const committing = {
+    pageName: "changes",
+    cards: [
     {
         title: 'Conventional Commits',  
         kind:  'reaction',
@@ -332,4 +334,4 @@ export const committing = [
 
       },
 ]
-
+}
