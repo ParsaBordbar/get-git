@@ -2,14 +2,13 @@
 
 @font-face {
   font-family: poppins;
-  src: url('./assets/fonts/Poppins-Black.ttf');
+  src: url("./assets/fonts/Poppins-Black.ttf");
 }
 
 @font-face {
   font-family: rubik;
-  src: url('./assets/fonts/Rubik-VariableFont_wght.ttf');
+  src: url("./assets/fonts/Rubik-VariableFont_wght.ttf");
 }
-
 
 :root {
   font-family: rubik, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -18,7 +17,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #FEF5CC;
+  background-color: #fef5cc;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -28,34 +27,32 @@
 
 a {
   font-weight: 500;
-  color: #1747E7;
+  color: #1747e7;
   text-decoration: inherit;
 }
 a:hover {
-  color: #1747E7;
+  color: #1747e7;
 }
-
 
 /* Candy Theme */
 @theme {
-  --color-candy-red: #F75B2B;
-  --color-candy-yellow: #FFE87E;
-  --color-candy-yellow-sharp: #F7BD1D;
-  --color-candy-yellow-warm: #FAD966;
-  --color-candy-blue: #1747E7;
-  --color-candy-teal: #04BFA4;
-  --color-candy-blue-sky: #C5C6FF;
-  --color-candy-tan: #FEF5CC;
-  --color-candy-green-light: #6CBD45;
-  --color-candy-pink:#FFA9E8;
-  --color-candy-pink-strawberry: #FF829D;
-  --color-candy-green-M: #7B9D7C;
-  --color-candy-milky: #FEE9E8;
+  --color-candy-red: #f75b2b;
+  --color-candy-yellow: #ffe87e;
+  --color-candy-yellow-sharp: #f7bd1d;
+  --color-candy-yellow-warm: #fad966;
+  --color-candy-blue: #1747e7;
+  --color-candy-teal: #04bfa4;
+  --color-candy-blue-sky: #c5c6ff;
+  --color-candy-tan: #fef5cc;
+  --color-candy-green-light: #6cbd45;
+  --color-candy-pink: #ffa9e8;
+  --color-candy-pink-strawberry: #ff829d;
+  --color-candy-green-M: #7b9d7c;
+  --color-candy-milky: #fee9e8;
 }
-
 
 /* Arctic Theme */
 @theme {
   --color-arctic-black: #040404;
-  --color-arctic-white: #F9F9F9;
+  --color-arctic-white: #f9f9f9;
 }
