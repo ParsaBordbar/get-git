@@ -1,4 +1,5 @@
 import { motion, Variants } from "motion/react"
+import { useEffect, useState } from "react"
 import { cardType, copyType, tagType } from "../../types/types"
 import MarkDownText from "../MarkDown"
 import CopyCommand from "../CopyCommand"
@@ -15,6 +16,14 @@ const Card = ({
   code, 
   animate = true 
 }: cardType) => {
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const checkScreen = () => setIsMobile(window.innerWidth < 640)
+    checkScreen()
+    window.addEventListener("resize", checkScreen)
+    return () => window.removeEventListener("resize", checkScreen)
+  }, [])
 
   const cardVariantsDesktop: Variants = {
     offscreen: { x: "25vw", rotate: -12 },
@@ -25,17 +34,17 @@ const Card = ({
     },
   }
 
-  const Container = animate ? motion.div : "div"
+  const Container = !animate || isMobile ? "div" : motion.div
 
   return (
     <Container
-      className={`${style} w-full sm:w-[22rem] md:w-[28rem] lg:w-[32rem] 
-        flex flex-col col-span-full m-4 text-slate-900 overflow-hidden
+      className={`${style} w-[92%] sm:w-[22rem] md:w-[28rem] lg:w-[32rem] 
+        flex flex-col col-span-full m-4 me-10 text-slate-900 overflow-hidden
         gap-4 sm:gap-5 md:gap-6
         rounded-tr-4xl rounded-b-4xl rounded-tl-lg 
-        p-4 sm:p-6 md:p-8 justify-center 
+        p-4 sm:p-6 md:p-8 justify-center
         border-2 border-x-4 border-t-4 border-b-[16px] border-stone-850`}
-      {...(animate && {
+      {...(!isMobile && animate && {
         initial: "offscreen",
         whileInView: "onscreen",
         viewport: { amount: 0.65 },
