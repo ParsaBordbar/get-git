@@ -29,7 +29,6 @@ export const gitConflictCard: flashCardSeries = {
       { text: 'version_control', url: 'smt' }
     ],
     icon: './assets/git.svg',
-    imgUrl: './assets/conflict-intro.png',
     style: 'bg-[#FF9999]',
   },
   {
