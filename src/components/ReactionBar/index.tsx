@@ -1,5 +1,5 @@
-import { ReactionButtonType } from "../../types/types"
-import ReactionButton from "../ReactionButton"
+import { ReactionButtonType } from "../../types/types";
+import ReactionButton from "../ReactionButton";
 
 const reactions = [
   { text: "👍" },
@@ -8,7 +8,7 @@ const reactions = [
   { text: "😎" },
   { text: "💅" },
   { text: "🤔" },
-]
+];
 
 function ReactionBar() {
   return (
@@ -20,7 +20,7 @@ function ReactionBar() {
         <ReactionButton text={reaction.text} key={index} />
       ))}
     </div>
-  )
+  );
 }
 
-export default ReactionBar
+export default ReactionBar;

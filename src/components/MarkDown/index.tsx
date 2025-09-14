@@ -1,9 +1,7 @@
-import ReactMarkdown from 'react-markdown';
+import ReactMarkdown from "react-markdown";
 
-const MarkDownText = ({ markdown } : {markdown: string}) => {
-  return (
-    <ReactMarkdown>{markdown}</ReactMarkdown>
-  );
+const MarkDownText = ({ markdown }: { markdown: string }) => {
+  return <ReactMarkdown>{markdown}</ReactMarkdown>;
 };
 
 export default MarkDownText;

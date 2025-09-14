@@ -1,36 +1,36 @@
 export interface tagType {
-    text: string,
-    url: string,
+  text: string;
+  url: string;
 }
 
 export interface copyType {
-    label?: string,
-    text: string,
+  label?: string;
+  text: string;
 }
 
 export interface flashCardSeries {
-    pageName: string,
-    cards: cardType[],
+  pageName: string;
+  cards: cardType[];
 }
 
 export interface cardType {
-    title: string, 
-    desc?: string, 
-    kind: string, 
-    tags?: tagType[], 
-    icon: string, 
-    imgUrl?: string,
-    code?: copyType[],
-    style: string,
-    animate? : boolean,
+  title: string;
+  desc?: string;
+  kind: string;
+  tags?: tagType[];
+  icon: string;
+  imgUrl?: string;
+  code?: copyType[];
+  style: string;
+  animate?: boolean;
 }
 
 export interface navigationType {
-    next?: string,
-    prev?: string,
+  next?: string;
+  prev?: string;
 }
 
 export interface ReactionButtonType {
-    style?: string, 
-    text: string
+  style?: string;
+  text: string;
 }

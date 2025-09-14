@@ -1,20 +1,20 @@
-import { motion, useScroll } from "framer-motion"
-import { useState, useEffect } from "react"
+import { motion, useScroll } from "framer-motion";
+import { useState, useEffect } from "react";
 
 type AbstractProps = {
-  count: number
-}
+  count: number;
+};
 
 const Abstract = ({ count }: AbstractProps) => {
-  const { scrollYProgress } = useScroll()
+  const { scrollYProgress } = useScroll();
 
-  const [screenHeight, setScreenHeight] = useState<number>(0)
+  const [screenHeight, setScreenHeight] = useState<number>(0);
   useEffect(() => {
-    const updateHeight = () => setScreenHeight(window.innerHeight)
-    updateHeight()
-    window.addEventListener("resize", updateHeight)
-    return () => window.removeEventListener("resize", updateHeight)
-  }, [])
+    const updateHeight = () => setScreenHeight(window.innerHeight);
+    updateHeight();
+    window.addEventListener("resize", updateHeight);
+    return () => window.removeEventListener("resize", updateHeight);
+  }, []);
 
   return (
     <div
@@ -28,11 +28,19 @@ const Abstract = ({ count }: AbstractProps) => {
         bg-[#FC2865] shadow-md"
       >
         <div className="flex gap-2 items-center">
-          <img className="size-4 sm:size-5" src="./assets/card.svg" alt="Cards" />
+          <img
+            className="size-4 sm:size-5"
+            src="./assets/card.svg"
+            alt="Cards"
+          />
           <p>{count} cards</p>
         </div>
         <div className="flex gap-2 items-center">
-          <img className="size-4 sm:size-5" src="./assets/clock.svg" alt="Time" />
+          <img
+            className="size-4 sm:size-5"
+            src="./assets/clock.svg"
+            alt="Time"
+          />
           <p>{Math.floor(count * 1.2)} mins</p>
         </div>
       </div>
@@ -48,7 +56,7 @@ const Abstract = ({ count }: AbstractProps) => {
         }}
       />
     </div>
-  )
-}
+  );
+};
 
-export default Abstract
+export default Abstract;

@@ -1,72 +1,71 @@
 export const committing = {
-    pageName: "changes",
-    cards: [
+  pageName: "changes",
+  cards: [
     {
-        title: 'Conventional Commits',  
-        kind:  'reaction',
-        desc: 'By Parsa Bordbar',
-        tags: [
-          {
-            text: 'git',
-            url: 'smt'
-          },
-          {
-            text: 'github',
-            url: 'smt'
-          },
-          {
-            text: 'version_control',
-            url: 'smt'
-          }
-        ], 
-        icon:  './assets/git.svg', 
-        imgUrl:  '',
-        style: 'bg-[#7B9D7C]',
-      },
-      
-      {
-        title: 'Structure',  
-        kind:  'reaction',
-        desc:  ` In this section we are going to learn how commit proffesianaly and save you and others tons of time!
+      title: "Conventional Commits",
+      kind: "reaction",
+      desc: "By Parsa Bordbar",
+      tags: [
+        {
+          text: "git",
+          url: "smt",
+        },
+        {
+          text: "github",
+          url: "smt",
+        },
+        {
+          text: "version_control",
+          url: "smt",
+        },
+      ],
+      icon: "./assets/git.svg",
+      imgUrl: "",
+      style: "bg-[#7B9D7C]",
+    },
+
+    {
+      title: "Structure",
+      kind: "reaction",
+      desc: ` In this section we are going to learn how commit proffesianaly and save you and others tons of time!
         we have **header, body and footer for a single commit**, a good header follows this structure, note that **the scope** is optional.`,
-        code: [
-          {
-            text:'<type>[scope]: <description>',
-            label:'Header of a good commit:'
-          },
-          {
-            text:'[optional body]',
-            label:'Body comes after the Header:'
-          },
-          {
-            text:'[optional footer]',
-            label:'and at the end comes the Footer:'
-          },
-        ],
-        tags: [
-          {
-            text: 'git',
-            url: 'smt'
-          },
-          {
-            text: 'github',
-            url: 'smt'
-          },
-          {
-            text: 'version_control',
-            url: 'smt'
-          }
-        ], 
-        icon:  './assets/git.svg', 
-        imgUrl:  '',
-        style: 'bg-candy-yellow-sharp',
-      },
-      
-      {
-        title: 'a. Example Of A Good Commit',  
-        kind:  'reaction',
-        desc: 
-    `
+      code: [
+        {
+          text: "<type>[scope]: <description>",
+          label: "Header of a good commit:",
+        },
+        {
+          text: "[optional body]",
+          label: "Body comes after the Header:",
+        },
+        {
+          text: "[optional footer]",
+          label: "and at the end comes the Footer:",
+        },
+      ],
+      tags: [
+        {
+          text: "git",
+          url: "smt",
+        },
+        {
+          text: "github",
+          url: "smt",
+        },
+        {
+          text: "version_control",
+          url: "smt",
+        },
+      ],
+      icon: "./assets/git.svg",
+      imgUrl: "",
+      style: "bg-candy-yellow-sharp",
+    },
+
+    {
+      title: "a. Example Of A Good Commit",
+      kind: "reaction",
+      desc: `
     fix(cart): correct total price calculation
 
     Fixed an issue where the total price in the
@@ -78,92 +77,91 @@ export const committing = {
     cover discount scenarios.
 
     Refs #101: Fixes the issue with incorrect
-    pricing.`    
-    ,
-        // code: [
-        //   {
-        //     text:'<type>[scope]: <description>',
-        //     label:'Header of a good commit:'
-        //   },
-        // ],
-        tags: [
-          {
-            text: 'git',
-            url: 'smt'
-          },
-          {
-            text: 'github',
-            url: 'smt'
-          },
-          {
-            text: 'version_control',
-            url: 'smt'
-          }
-        ], 
-        icon:  './assets/git.svg', 
-        // imgUrl: './assets/commitEx.png',
-        style: 'bg-candy-green-light',
-      },
+    pricing.`,
+      // code: [
+      //   {
+      //     text:'<type>[scope]: <description>',
+      //     label:'Header of a good commit:'
+      //   },
+      // ],
+      tags: [
+        {
+          text: "git",
+          url: "smt",
+        },
+        {
+          text: "github",
+          url: "smt",
+        },
+        {
+          text: "version_control",
+          url: "smt",
+        },
+      ],
+      icon: "./assets/git.svg",
+      // imgUrl: './assets/commitEx.png',
+      style: "bg-candy-green-light",
+    },
 
-      {
-        title: 'b. Example Of A Good Commit',  
-        kind:  'reaction',
-        desc: `Let's take a look at some more examples of good commit messages!
+    {
+      title: "b. Example Of A Good Commit",
+      kind: "reaction",
+      desc: `Let's take a look at some more examples of good commit messages!
         [click here!](https://github.com/torvalds/linux/commits/master/)
-        `,      
-        tags: [
-          {
-            text: 'git',
-            url: 'smt'
-          },
-          {
-            text: 'github',
-            url: 'smt'
-          },
-          {
-            text: 'version_control',
-            url: 'smt'
-          }
-        ], 
-        icon:  './assets/git.svg', 
-        imgUrl:  '',
-        style: 'bg-candy-green-light',
-      },
+        `,
+      tags: [
+        {
+          text: "git",
+          url: "smt",
+        },
+        {
+          text: "github",
+          url: "smt",
+        },
+        {
+          text: "version_control",
+          url: "smt",
+        },
+      ],
+      icon: "./assets/git.svg",
+      imgUrl: "",
+      style: "bg-candy-green-light",
+    },
 
-      {
-        title: 'Commit Hashes',  
-        kind:  'reaction',
-        desc: `By now you know about **commits** and how to commit (or do you?)
+    {
+      title: "Commit Hashes",
+      kind: "reaction",
+      desc: `By now you know about **commits** and how to commit (or do you?)
         so what is a **Commit hash?** it's the unique identifier of a commit like:
         `,
-        code: [
-          {
-            text:'a2cc6ff5ec8f91bc463fd3b0 ...',
-          },
-        ],
-        tags: [
-          {
-            text: 'git',
-            url: 'smt'
-          },
-          {
-            text: 'github',
-            url: 'smt'
-          },
-          {
-            text: 'version_control',
-            url: 'smt'
-          }
-        ], 
-        icon:  './assets/git.svg', 
-        imgUrl:  '',
-        style: 'bg-candy-blue-sky',
-      },
+      code: [
+        {
+          text: "a2cc6ff5ec8f91bc463fd3b0 ...",
+        },
+      ],
+      tags: [
+        {
+          text: "git",
+          url: "smt",
+        },
+        {
+          text: "github",
+          url: "smt",
+        },
+        {
+          text: "version_control",
+          url: "smt",
+        },
+      ],
+      icon: "./assets/git.svg",
+      imgUrl: "",
+      style: "bg-candy-blue-sky",
+    },
 
-      {
-        title: 'Commit Types',  
-        kind:  'reaction',
-        desc: `
+    {
+      title: "Commit Types",
+      kind: "reaction",
+      desc: `
   ● **fix**: Bug fixes (e.g., correcting a problem in the code).  
   
   &nbsp;  
@@ -174,30 +172,30 @@ export const committing = {
   ● **build**: Changes related to project build or configuration (e.g., updating build scripts).  
   
   &nbsp;  
-  `,        
-        tags: [
-          {
-            text: 'git',
-            url: 'smt'
-          },
-          {
-            text: 'github',
-            url: 'smt'
-          },
-          {
-            text: 'version_control',
-            url: 'smt'
-          }
-        ], 
-        icon:  './assets/git.svg', 
-        imgUrl:  '',
-        style: 'bg-candy-red',
-      },
+  `,
+      tags: [
+        {
+          text: "git",
+          url: "smt",
+        },
+        {
+          text: "github",
+          url: "smt",
+        },
+        {
+          text: "version_control",
+          url: "smt",
+        },
+      ],
+      icon: "./assets/git.svg",
+      imgUrl: "",
+      style: "bg-candy-red",
+    },
 
-      {
-        title: 'Commit Types',  
-        kind:  'reaction',
-        desc: `
+    {
+      title: "Commit Types",
+      kind: "reaction",
+      desc: `
 
   ● **chore**: Routine tasks that don’t affect the source code or tests (e.g., updating dependencies).  
   
@@ -211,30 +209,30 @@ export const committing = {
   
   &nbsp;  
   
-  `,        
-        tags: [
-          {
-            text: 'git',
-            url: 'smt'
-          },
-          {
-            text: 'github',
-            url: 'smt'
-          },
-          {
-            text: 'version_control',
-            url: 'smt'
-          }
-        ], 
-        icon:  './assets/git.svg', 
-        imgUrl:  '',
-        style: 'bg-candy-teal',
-      },
+  `,
+      tags: [
+        {
+          text: "git",
+          url: "smt",
+        },
+        {
+          text: "github",
+          url: "smt",
+        },
+        {
+          text: "version_control",
+          url: "smt",
+        },
+      ],
+      icon: "./assets/git.svg",
+      imgUrl: "",
+      style: "bg-candy-teal",
+    },
 
-      {
-        title: 'Commit Types',  
-        kind:  'reaction',
-        desc: `
+    {
+      title: "Commit Types",
+      kind: "reaction",
+      desc: `
 
   ● **perf**: Changes that improve performance (e.g., optimizing code for speed).
 
@@ -247,91 +245,85 @@ export const committing = {
   ● **refactor**: Code changes that improve structure without altering functionality (e.g., reorganizing code for clarity).
 
 
-  `,        
-        tags: [
-          {
-            text: 'git',
-            url: 'smt'
-          },
-          {
-            text: 'github',
-            url: 'smt'
-          },
-          {
-            text: 'version_control',
-            url: 'smt'
-          }
-        ], 
-        icon:  './assets/git.svg', 
-        imgUrl:  '',
-        style: 'bg-candy-yellow',
-      },
-      {
-        title: 'Footer',
-        icon:  './assets/git.svg', 
-        style: 'bg-candy-pink',
-        kind:  'reaction',
-        desc: "In the footer you can have different optional comments that we'll go through.",
-      },
-      {
-        title: 'Refs',
-        icon:  './assets/git.svg', 
-        style: 'bg-candy-blue',
-        desc: `We can reference **Issues** & certain commits using **#**.`,
-        code: [
-          {
-            text: 
-            `fix(cart): fix total price calculation.
+  `,
+      tags: [
+        {
+          text: "git",
+          url: "smt",
+        },
+        {
+          text: "github",
+          url: "smt",
+        },
+        {
+          text: "version_control",
+          url: "smt",
+        },
+      ],
+      icon: "./assets/git.svg",
+      imgUrl: "",
+      style: "bg-candy-yellow",
+    },
+    {
+      title: "Footer",
+      icon: "./assets/git.svg",
+      style: "bg-candy-pink",
+      kind: "reaction",
+      desc: "In the footer you can have different optional comments that we'll go through.",
+    },
+    {
+      title: "Refs",
+      icon: "./assets/git.svg",
+      style: "bg-candy-blue",
+      desc: `We can reference **Issues** & certain commits using **#**.`,
+      code: [
+        {
+          text: `fix(cart): fix total price calculation.
             &nbsp;
             Fixed the total price calculation issue.
             &nbsp;  
             Refs #234: Solves the problem reported in issue #234.
           `,
-            label: 'Example:',
-          },
-        ],
-        kind:  'reaction',
-
-      },
-      {
-        title: 'Co Authored',
-        icon:  './assets/git.svg', 
-        style: 'bg-candy-yellow-sharp',
-        desc: `**Co-authored-by**: If multiple people contributed to the commit, their contributions are acknowledged here in the footer.`,
-        code: [
-          {
-            text: 
-            `feat(search): add filters
+          label: "Example:",
+        },
+      ],
+      kind: "reaction",
+    },
+    {
+      title: "Co Authored",
+      icon: "./assets/git.svg",
+      style: "bg-candy-yellow-sharp",
+      desc: `**Co-authored-by**: If multiple people contributed to the commit, their contributions are acknowledged here in the footer.`,
+      code: [
+        {
+          text: `feat(search): add filters
             &nbsp;
             &nbsp;
             Added filters to search results.
             Co-authored-by: John Doe <john.doe@example.com>
           `,
-            label: 'Example:',
-          },
-        ],
-        kind:  'reaction',
-
-      },
-      {
-        title: 'Refs',
-        icon:  './assets/git.svg', 
-        style: 'bg-candy-blue-sky',
-        desc: `We can reference **Issues** & certain commits using **#**.`,
-        code: [
-          {
-            text: 
-            `fix(cart): fix total price calculation.
+          label: "Example:",
+        },
+      ],
+      kind: "reaction",
+    },
+    {
+      title: "Refs",
+      icon: "./assets/git.svg",
+      style: "bg-candy-blue-sky",
+      desc: `We can reference **Issues** & certain commits using **#**.`,
+      code: [
+        {
+          text: `fix(cart): fix total price calculation.
             &nbsp;
             Fixed the total price calculation issue.
             &nbsp;  
             Refs #234: Solves the problem reported in issue #234.
           `,
-            label: 'Example:',
-          },
-        ],
-        kind:  'reaction',
-
-      },
-]
-}
+          label: "Example:",
+        },
+      ],
+      kind: "reaction",
+    },
+  ],
+};

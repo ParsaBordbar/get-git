@@ -1,6 +1,7 @@
 ![image](https://github.com/user-attachments/assets/dbd97beb-f3e1-4ef9-824b-ba7ae54696f7)
 
 # Get-Git
+
 Get-Git is an open‑source React application that offers both a cheat sheet and flashcards to help you learn and refresh your Git knowledge. It’s a sub‑project of a broader open‑source learning platform focused on teaching the 20% of a topic you need for 80% of real‑world workflows.
 You can read it from its GithubPages, [here](https://parsabordbar.github.io/get-git/)
 
@@ -10,8 +11,8 @@ You can read it from its GithubPages, [here](https://parsabordbar.github.io/get-
 - **Git Changes**: Inspecting changes with `git status`, `git log`, `git diff`, and `git restore`
 - **Committing**: Crafting good commit messages, understanding commit types, and best practices
 - **Branches**: Creating, switching, merging branches, and more
-- **GitHub** *(Coming Soon)*: Repository management, `git pull`, cloning, and contributing
-- **Conflicts** *(Coming Soon)*: Handling merge conflicts and a simple introduction to rebasing
+- **GitHub** _(Coming Soon)_: Repository management, `git pull`, cloning, and contributing
+- **Conflicts** _(Coming Soon)_: Handling merge conflicts and a simple introduction to rebasing
 
 ## Local Usage
 
@@ -50,12 +51,11 @@ Contributions are welcome! Please keep in mind:
 This project is licensed under the [Creative Commons Attribution‑NonCommercial‑ShareAlike 4.0 International License](LICENSE).
 
 ---
+
 ###### Incomiming Releasses:
 
 - Improvments for Responsiveness
 - Customazation + New Features
 - Dokcer Container for local usage
 
-
-*Happy Git learning!*
-
+_Happy Git learning!_

@@ -9,19 +9,19 @@ import Conflicts from "../pages/Conflicts";
 import Github from "../pages/Github";
 
 interface Route {
-    path: string;
-    Component: ComponentType;
-    title?: string;
-    icon?: JSX.Element;
-  }
-  
+  path: string;
+  Component: ComponentType;
+  title?: string;
+  icon?: JSX.Element;
+}
+
 export const routes: Route[] = [
-    { path: '/', Component: Git },
-    { path: '/get-git', Component: Git },
-    { path: '/get-git/basics', Component: Basics },
-    { path: '/get-git/commit', Component: Commit },
-    { path: '/get-git/changes', Component: Changes },
-    { path: '/get-git/branches', Component: Branches },
-    { path: '/get-git/github', Component: Github},
-    { path: '/get-git/conflicts', Component: Conflicts},
+  { path: "/", Component: Git },
+  { path: "/get-git", Component: Git },
+  { path: "/get-git/basics", Component: Basics },
+  { path: "/get-git/commit", Component: Commit },
+  { path: "/get-git/changes", Component: Changes },
+  { path: "/get-git/branches", Component: Branches },
+  { path: "/get-git/github", Component: Github },
+  { path: "/get-git/conflicts", Component: Conflicts },
 ];

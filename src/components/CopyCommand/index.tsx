@@ -1,19 +1,19 @@
-import { useState } from "react"
-import { copyType } from "../../types/types"
-import MarkDownText from "../MarkDown"
+import { useState } from "react";
+import { copyType } from "../../types/types";
+import MarkDownText from "../MarkDown";
 
 const CopyCommand = ({ label, text }: copyType) => {
-  const [copied, setCopied] = useState(false)
+  const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
     navigator.clipboard
       .writeText(text)
       .then(() => {
-        setCopied(true)
-        setTimeout(() => setCopied(false), 2000)
+        setCopied(true);
+        setTimeout(() => setCopied(false), 2000);
       })
-      .catch((err) => console.error("Failed to copy:", err))
-  }
+      .catch((err) => console.error("Failed to copy:", err));
+  };
 
   return (
     <div className="flex flex-col gap-2 sm:gap-3">
@@ -39,7 +39,7 @@ const CopyCommand = ({ label, text }: copyType) => {
         </button>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default CopyCommand
+export default CopyCommand;
