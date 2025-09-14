@@ -3,7 +3,7 @@ import Card from '../components/Card'
 function Git() {
   return (
     <section className='flex justify-center items-center w-full my-14'>
-      <div className='mr-8 lg:m-0'>
+      <div className='lg:m-0'>
           <a href="/get-git/basics">
             <Card animate={false} title={'1. Basics'} desc="Stuff you'll use every day." kind={'default'} 
               icon={'./assets/git.svg'} style={'bg-candy-red'} />
