@@ -31,8 +31,8 @@
   --glass-inset: rgba(255, 255, 255, 0.05);
   --glass-hover-shadow: rgba(122, 162, 247, 0.4);
   --glass-hover-inset: rgba(255, 255, 255, 0.1);
-  --glass-grad1: #9a9999c7;
-  --glass-grad2: rgba(179, 179, 179, 0.19);
+  --glass-grad1: #cfcecec7;
+  --glass-grad2: rgba(232, 232, 232, 0.19);
   --glass-text-color: #c0caf5;
   --glass-text-shadow: rgba(122, 162, 247, 0.6);
 }
