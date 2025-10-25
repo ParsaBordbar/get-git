@@ -21,12 +21,12 @@ const Abstract = ({ count }: AbstractProps) => {
       className="fixed left-2 sm:left-6 md:left-16 top-0 flex-col items-center hidden md:flex my-2 bg-blend-darken"
       style={{ height: screenHeight }}
     >
-      <div
-        className="sm:mt-20 mt-30"
-      >
-        <div className="mb-4 flex flex-col items-center gap-2 px-3 py-4
+      <div className="sm:mt-20 mt-30">
+        <div
+          className="mb-4 flex flex-col items-center gap-2 px-3 py-4
         text-white text-sm sm:text-base md:text-lg font-semibold
-        rounded-3xl glass-base glass-gradient glass-bg glass-shadow glass-border">
+        rounded-3xl glass-base glass-gradient glass-bg glass-shadow glass-border"
+        >
           {/* <img
             className="size-4 sm:size-5"
             src="./assets/card.svg"
@@ -34,9 +34,11 @@ const Abstract = ({ count }: AbstractProps) => {
           /> */}
           <p>{count} cards</p>
         </div>
-        <div className="flex flex-col items-center gap-2 px-3 py-4 
+        <div
+          className="flex flex-col items-center gap-2 px-3 py-4 
         text-white text-sm sm:text-base md:text-lg font-semibold
-        rounded-3xl glass-base glass-gradient glass-bg glass-shadow glass-border">
+        rounded-3xl glass-base glass-gradient glass-bg glass-shadow glass-border"
+        >
           {/* <img
             className="size-4 sm:size-5"
             src="./assets/clock.svg"

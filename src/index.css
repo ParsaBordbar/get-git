@@ -23,7 +23,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-    --glass-blur: 20px;
+  --glass-blur: 20px;
   --glass-saturation: 180%;
   --glass-bg: rgba(255, 255, 255, 0.9);
   --glass-border: rgba(255, 255, 255, 0.871);
@@ -73,8 +73,10 @@ a:hover {
 
 @layer utilities {
   .glass-base {
-    backdrop-filter: blur(var(--glass-blur, 16px)) saturate(var(--glass-saturation, 180%));
-    -webkit-backdrop-filter: blur(var(--glass-blur, 16px)) saturate(var(--glass-saturation, 180%));
+    backdrop-filter: blur(var(--glass-blur, 16px))
+      saturate(var(--glass-saturation, 180%));
+    -webkit-backdrop-filter: blur(var(--glass-blur, 16px))
+      saturate(var(--glass-saturation, 180%));
     transition: all 0.3s ease;
   }
 
