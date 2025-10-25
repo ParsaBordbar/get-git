@@ -18,40 +18,41 @@ const Abstract = ({ count }: AbstractProps) => {
 
   return (
     <div
-      className="fixed left-2 sm:left-6 md:left-12 top-0 flex flex-col items-center hidden md:flex my-2"
+      className="fixed left-2 sm:left-6 md:left-16 top-0 flex-col items-center hidden md:flex my-2 bg-blend-darken"
       style={{ height: screenHeight }}
     >
       <div
-        className="mt-12 sm:mt-20 flex flex-col items-center gap-2 px-3 py-2 
-        text-[#000022] text-sm sm:text-base md:text-lg font-semibold
-        rounded-2xl border-t-4 border-x-2 border-b-[6px] border-stone-850 
-        bg-[#FC2865] shadow-md"
+        className="sm:mt-20 mt-30"
       >
-        <div className="flex gap-2 items-center">
-          <img
+        <div className="mb-4 flex flex-col items-center gap-2 px-3 py-4
+        text-white text-sm sm:text-base md:text-lg font-semibold
+        rounded-3xl glass-base glass-gradient glass-bg glass-shadow glass-border">
+          {/* <img
             className="size-4 sm:size-5"
             src="./assets/card.svg"
             alt="Cards"
-          />
+          /> */}
           <p>{count} cards</p>
         </div>
-        <div className="flex gap-2 items-center">
-          <img
+        <div className="flex flex-col items-center gap-2 px-3 py-4 
+        text-white text-sm sm:text-base md:text-lg font-semibold
+        rounded-3xl glass-base glass-gradient glass-bg glass-shadow glass-border">
+          {/* <img
             className="size-4 sm:size-5"
             src="./assets/clock.svg"
             alt="Time"
-          />
+          /> */}
           <p>{Math.floor(count * 1.2)} mins</p>
         </div>
       </div>
 
       <motion.div
-        className="rounded-full bg-blue-500 border-2 border-stone-800"
+        className="rounded-full bg-white mt-2 glass-bg glass-shadow glass-border"
         id="scroll-indicator"
         style={{
           scaleY: scrollYProgress,
           height: screenHeight * 0.4,
-          width: 14,
+          width: 8,
           originY: 0,
         }}
       />
