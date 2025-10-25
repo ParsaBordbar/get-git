@@ -23,6 +23,18 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+    --glass-blur: 20px;
+  --glass-saturation: 180%;
+  --glass-bg: rgba(255, 255, 255, 0.9);
+  --glass-border: rgba(255, 255, 255, 0.871);
+  --glass-shadow: rgba(122, 162, 247, 0.2);
+  --glass-inset: rgba(255, 255, 255, 0.05);
+  --glass-hover-shadow: rgba(122, 162, 247, 0.4);
+  --glass-hover-inset: rgba(255, 255, 255, 0.1);
+  --glass-grad1: #9a9999c7;
+  --glass-grad2: rgba(179, 179, 179, 0.19);
+  --glass-text-color: #c0caf5;
+  --glass-text-shadow: rgba(122, 162, 247, 0.6);
 }
 
 a {
@@ -55,4 +67,72 @@ a:hover {
 @theme {
   --color-arctic-black: #040404;
   --color-arctic-white: #f9f9f9;
+}
+
+@import "tailwindcss";
+
+@layer utilities {
+  .glass-base {
+    backdrop-filter: blur(var(--glass-blur, 16px)) saturate(var(--glass-saturation, 180%));
+    -webkit-backdrop-filter: blur(var(--glass-blur, 16px)) saturate(var(--glass-saturation, 180%));
+    transition: all 0.3s ease;
+  }
+
+  .glass-bg {
+    background-color: var(--glass-bg, rgba(255, 255, 255, 0.9));
+  }
+
+  .glass-border {
+    border: 1px solid var(--glass-border, rgb(255, 255, 255));
+  }
+
+  .glass-shadow {
+    box-shadow:
+      0 0 20px var(--glass-shadow, rgba(122, 162, 247, 0.2)),
+      inset 0 0 15px var(--glass-inset, rgba(255, 255, 255, 0.05));
+  }
+
+  .glass-hover:hover {
+    box-shadow:
+      0 0 25px var(--glass-hover-shadow, rgba(122, 162, 247, 0.4)),
+      inset 0 0 25px var(--glass-hover-inset, rgba(255, 255, 255, 0.1));
+  }
+
+  .glass-gradient {
+    background: linear-gradient(
+      145deg,
+      var(--glass-grad1, #7aa2f74d),
+      var(--glass-grad2, rgba(255, 255, 255, 0.19))
+    );
+  }
+
+  .glass-btn-shadow {
+    box-shadow:
+      0 4px 15px var(--glass-btn-shadow, rgba(122, 162, 247, 0.25)),
+      inset 0 0 20px var(--glass-btn-inset, rgba(255, 255, 255, 0.1));
+  }
+
+  .glass-btn-hover:hover {
+    background: linear-gradient(
+      145deg,
+      var(--glass-btn-hover-grad1, rgba(122, 162, 247, 0.3)),
+      var(--glass-btn-hover-grad2, rgba(255, 255, 255, 0.19))
+    );
+    box-shadow:
+      0 6px 20px var(--glass-btn-hover-shadow, rgba(122, 162, 247, 0.45)),
+      inset 0 0 25px var(--glass-btn-hover-inset, rgba(184, 183, 183, 0.2));
+    transform: scale(1.05);
+  }
+
+  .glass-btn-active:active {
+    transform: scale(0.95);
+    box-shadow:
+      0 2px 10px var(--glass-btn-active-shadow, rgba(122, 162, 247, 0.4)),
+      inset 0 0 10px var(--glass-btn-active-inset, rgba(255, 255, 255, 0.1));
+  }
+
+  .glass-text {
+    color: var(--glass-text-color, #c0caf5);
+    text-shadow: 0 0 10px var(--glass-text-shadow, rgba(122, 162, 247, 0.6));
+  }
 }
