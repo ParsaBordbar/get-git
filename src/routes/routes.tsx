@@ -7,6 +7,7 @@ import Changes from "../pages/Changes";
 import Branches from "../pages/Branches";
 import Conflicts from "../pages/Conflicts";
 import Github from "../pages/Github";
+import GameDev from "../pages/GameDev";
 
 interface Route {
   path: string;
@@ -24,4 +25,5 @@ export const routes: Route[] = [
   { path: "/get-git/branches", Component: Branches },
   { path: "/get-git/github", Component: Github },
   { path: "/get-git/conflicts", Component: Conflicts },
+  { path: "/get-git/game-dev", Component: GameDev },
 ];
