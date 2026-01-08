@@ -8,6 +8,8 @@ import Branches from "../pages/Branches";
 import Conflicts from "../pages/Conflicts";
 import Github from "../pages/Github";
 import GameDev from "../pages/GameDev";
+import Delta from "../pages/Delta";
+
 
 interface Route {
   path: string;
@@ -26,4 +28,5 @@ export const routes: Route[] = [
   { path: "/get-git/github", Component: Github },
   { path: "/get-git/conflicts", Component: Conflicts },
   { path: "/get-git/game-dev", Component: GameDev },
+  { path: "/get-git/delta", Component: Delta },
 ];

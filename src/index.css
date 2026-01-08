@@ -25,14 +25,14 @@
   -moz-osx-font-smoothing: grayscale;
   --glass-blur: 20px;
   --glass-saturation: 180%;
-  --glass-bg: rgba(255, 255, 255, 0.9);
+  --glass-bg: rgba(218, 218, 218, 0.9);
   --glass-border: rgba(255, 255, 255, 0.871);
   --glass-shadow: rgba(122, 162, 247, 0.2);
   --glass-inset: rgba(255, 255, 255, 0.05);
   --glass-hover-shadow: rgba(122, 162, 247, 0.4);
   --glass-hover-inset: rgba(255, 255, 255, 0.1);
-  --glass-grad1: #cfcecec7;
-  --glass-grad2: rgba(232, 232, 232, 0.19);
+  --glass-grad1: #7b7a7a25;
+  --glass-grad2: #70707027;
   --glass-text-color: #c0caf5;
   --glass-text-shadow: rgba(122, 162, 247, 0.6);
 }
@@ -73,15 +73,21 @@ a:hover {
 
 @layer utilities {
   .glass-base {
-    backdrop-filter: blur(var(--glass-blur, 16px))
-      saturate(var(--glass-saturation, 180%));
-    -webkit-backdrop-filter: blur(var(--glass-blur, 16px))
-      saturate(var(--glass-saturation, 180%));
-    transition: all 0.3s ease;
+  display: flex;
+  font-weight: 600;
+  overflow: hidden;
+  height: fit-content;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.1);
+
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 2.2);
   }
 
   .glass-bg {
-    background-color: var(--glass-bg, rgba(255, 255, 255, 0.9));
+      z-index: 0;
+
+      backdrop-filter: blur(3px);
+      filter: url(#glass-distortion);
+      overflow: hidden;
   }
 
   .glass-border {
@@ -100,13 +106,13 @@ a:hover {
       inset 0 0 25px var(--glass-hover-inset, rgba(255, 255, 255, 0.1));
   }
 
-  .glass-gradient {
+  /* .glass-gradient {
     background: linear-gradient(
-      145deg,
-      var(--glass-grad1, #7aa2f74d),
+      49deg,
+      var(--glass-grad1, #e2e5eb4d),
       var(--glass-grad2, rgba(255, 255, 255, 0.19))
     );
-  }
+  } */
 
   .glass-btn-shadow {
     box-shadow:
@@ -134,7 +140,8 @@ a:hover {
   }
 
   .glass-text {
-    color: var(--glass-text-color, #c0caf5);
-    text-shadow: 0 0 10px var(--glass-text-shadow, rgba(122, 162, 247, 0.6));
+    z-index: 3;
+    font-size: 2rem;
+    color: black;
   }
 }
