@@ -23,6 +23,7 @@ export interface cardType {
   code?: copyType[];
   style: string;
   animate?: boolean;
+  type?: "candy" | "artic" | "terminal"
 }
 
 export interface navigationType {
