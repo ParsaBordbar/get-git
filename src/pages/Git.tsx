@@ -1,5 +1,7 @@
 import SeriesTile from "../components/SeriesTile";
 import { series, seriesEntry } from "../data/series";
+import { useProgress } from "../lib/progress";
+import { asset } from "../lib/asset";
 
 const stickers = [
   { style: "bg-candy-red", rotate: "-rotate-12", offset: "translate-y-6" },
@@ -8,6 +10,9 @@ const stickers = [
 ];
 
 function Git() {
+  const { count, isDone, reset } = useProgress();
+  const next = series.find((s) => !isDone(s.path)) ?? series[0];
+
   return (
     <div className="mx-auto w-full max-w-6xl px-5 sm:px-8 pb-16">
       <section className="grid items-center gap-10 py-12 sm:py-16 lg:grid-cols-[1fr_auto] lg:py-24">
@@ -22,12 +27,12 @@ function Git() {
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <a
-              href={series[0].path}
+              href={next.path}
               className="rounded-2xl bg-candy-red px-6 py-3 text-lg font-bold !text-slate-900
                 border-2 border-x-4 border-t-2 border-b-[6px] border-stone-850
                 transition-transform duration-100 hover:-translate-y-0.5 active:translate-y-0.5"
             >
-              Start with {series[0].title}
+              {count === 0 ? `Start with ${next.title}` : count === series.length ? "Start over" : `Continue with ${next.title}`}
             </a>
             <a
               href="https://github.com/ParsaBordbar/get-git"
@@ -36,6 +41,18 @@ function Git() {
               Source on GitHub
             </a>
           </div>
+          {count > 0 && (
+            <p className="mt-5 font-medium text-slate-900/70">
+              {count} of {series.length} series done.{" "}
+              <button
+                type="button"
+                onClick={reset}
+                className="cursor-pointer font-bold !text-slate-900 underline decoration-2 underline-offset-4"
+              >
+                Reset progress
+              </button>
+            </p>
+          )}
         </div>
 
         <div className="hidden lg:flex items-start gap-0 pe-6" aria-hidden="true">
@@ -47,7 +64,7 @@ function Git() {
                 border-2 border-x-4 border-t-4 border-b-[10px] border-stone-850`}
             >
               <span className="flex size-10 items-center justify-center rounded-full bg-white border-4 border-stone-850">
-                <img className="size-5" src="./assets/git.svg" alt="" />
+                <img className="size-5" src={asset("./assets/git.svg")} alt="" />
               </span>
             </div>
           ))}
@@ -57,16 +74,21 @@ function Git() {
       <section aria-label="Series">
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {series.map((entry: seriesEntry, i: number) => (
-            <SeriesTile key={entry.path} entry={entry} index={i} />
+            <SeriesTile key={entry.path} entry={entry} index={i} done={isDone(entry.path)} />
           ))}
         </div>
       </section>
 
       <footer className="mt-16 flex flex-wrap items-center justify-between gap-3 border-t-4 border-stone-850 pt-6 font-medium text-slate-900/70">
         <span>Made by Parsa Bordbar</span>
-        <a href="https://github.com/ParsaBordbar/get-git" className="!text-slate-900 underline decoration-2 underline-offset-4">
-          GitHub
-        </a>
+        <span className="flex gap-5">
+          <a href="/get-git/tags" className="!text-slate-900 underline decoration-2 underline-offset-4">
+            Browse by tag
+          </a>
+          <a href="https://github.com/ParsaBordbar/get-git" className="!text-slate-900 underline decoration-2 underline-offset-4">
+            GitHub
+          </a>
+        </span>
       </footer>
     </div>
   );

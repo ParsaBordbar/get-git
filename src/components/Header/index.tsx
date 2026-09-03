@@ -1,12 +1,15 @@
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { series } from "../../data/series";
+import { useProgress } from "../../lib/progress";
+import { asset } from "../../lib/asset";
 
 const HOME = "/get-git/";
 
 function Header() {
   const [open, setOpen] = useState(false);
   const { pathname } = useLocation();
+  const { isDone } = useProgress();
   const current = pathname.replace(/\/$/, "");
 
   useEffect(() => setOpen(false), [pathname]);
@@ -30,7 +33,7 @@ function Header() {
       <div className="flex h-14 items-center justify-between bg-candy-tan px-4 border-b-4 border-stone-850">
         <a href={HOME} className="flex items-center gap-2 font-bold !text-slate-900">
           <span className="flex size-8 items-center justify-center rounded-full bg-white border-2 border-stone-850">
-            <img className="size-4" src="./assets/git.svg" alt="" />
+            <img className="size-4" src={asset("./assets/git.svg")} alt="" />
           </span>
           get-git
         </a>
@@ -101,13 +104,28 @@ function Header() {
                   />
                   <span className="w-6 tabular-nums opacity-60">{i + 1}</span>
                   {s.title}
-                  {s.badge && (
-                    <span className="ms-auto text-xs font-medium opacity-60">{s.badge}</span>
-                  )}
+                  <span className="ms-auto flex items-center gap-2 text-xs font-medium opacity-60">
+                    {s.badge}
+                    {isDone(s.path) && (
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={3.5} strokeLinecap="round" strokeLinejoin="round" className="size-4 opacity-100" aria-label="Done">
+                        <path d="M5 12.5l4.5 4.5L19 7" />
+                      </svg>
+                    )}
+                  </span>
                 </a>
               </li>
             );
           })}
+          <li>
+            <a
+              href="/get-git/tags"
+              aria-current={current.startsWith("/get-git/tags") ? "page" : undefined}
+              className={`mt-2 flex items-center gap-3 rounded-2xl px-4 py-3 font-bold border-2 border-b-[5px] border-stone-850
+                ${current.startsWith("/get-git/tags") ? "bg-stone-850 !text-white" : "bg-white !text-slate-900"}`}
+            >
+              Browse by tag
+            </a>
+          </li>
         </ul>
       </nav>
     </header>

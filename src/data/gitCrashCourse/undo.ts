@@ -1,7 +1,7 @@
 const tags = [
-  { text: "git", url: "smt" },
-  { text: "undo", url: "smt" },
-  { text: "recovery", url: "smt" },
+  { text: "git" },
+  { text: "undo" },
+  { text: "recovery" },
 ];
 
 export const undo = {

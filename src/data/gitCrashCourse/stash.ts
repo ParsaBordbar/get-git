@@ -1,7 +1,7 @@
 const tags = [
-  { text: "git", url: "smt" },
-  { text: "stash", url: "smt" },
-  { text: "workflow", url: "smt" },
+  { text: "git" },
+  { text: "stash" },
+  { text: "workflow" },
 ];
 
 export const stash = {

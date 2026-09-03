@@ -96,3 +96,8 @@ export function neighbours(path: string) {
     next: i < series.length - 1 ? series[i + 1].path : "/get-git/",
   };
 }
+
+export function entryFor(path: string) {
+  const clean = path.replace(/\/$/, "");
+  return series.find((s) => s.path.replace(/\/$/, "") === clean);
+}

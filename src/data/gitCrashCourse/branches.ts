@@ -8,15 +8,12 @@ export const branches = {
       tags: [
         {
           text: "git",
-          url: "smt",
         },
         {
           text: "github",
-          url: "smt",
         },
         {
           text: "version_control",
-          url: "smt",
         },
       ],
       icon: "./assets/git.svg",
@@ -44,15 +41,12 @@ Parallel Development.
       tags: [
         {
           text: "git",
-          url: "smt",
         },
         {
           text: "github",
-          url: "smt",
         },
         {
           text: "version_control",
-          url: "smt",
         },
       ],
       icon: "./assets/git.svg",
@@ -65,15 +59,12 @@ Parallel Development.
       tags: [
         {
           text: "git",
-          url: "smt",
         },
         {
           text: "github",
-          url: "smt",
         },
         {
           text: "version_control",
-          url: "smt",
         },
       ],
       icon: "./assets/git.svg",
@@ -95,15 +86,12 @@ Parallel Development.
       tags: [
         {
           text: "git",
-          url: "smt",
         },
         {
           text: "github",
-          url: "smt",
         },
         {
           text: "version_control",
-          url: "smt",
         },
       ],
       icon: "./assets/git.svg",

@@ -1,7 +1,7 @@
 const tags = [
-  { text: "git", url: "smt" },
-  { text: "merge", url: "smt" },
-  { text: "branches", url: "smt" },
+  { text: "git" },
+  { text: "merge" },
+  { text: "branches" },
 ];
 
 export const merge = {

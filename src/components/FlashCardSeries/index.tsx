@@ -4,6 +4,7 @@ import { neighbours } from "../../data/series";
 import Card from "../Card";
 import SideNav from "../SideNav";
 import Abstract from "../Abstract";
+import ProgressCheck from "../ProgressCheck";
 
 function FlashCardSeries({
   data,
@@ -39,6 +40,7 @@ function FlashCardSeries({
             animate={true}
           />
         ))}
+        <ProgressCheck path={pathname} next={nav.next} />
       </div>
     </section>
   );

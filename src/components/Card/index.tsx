@@ -5,6 +5,8 @@ import MarkDownText from "../MarkDown";
 import CopyCommand from "../CopyCommand";
 import ReactionBar from "../ReactionBar";
 import Badge from "../Badge";
+import { tagHref } from "../../data/cards";
+import { asset } from "../../lib/asset";
 
 
 const Card = ({
@@ -57,7 +59,7 @@ const Card = ({
     >
       <div className="flex items-center justify-between gap-3">
         <div className="flex justify-start items-end rounded-full p-2 bg-white w-fit border-4 border-stone-850">
-          <img className="size-10 sm:size-12" src={icon} alt="Icon" />
+          <img className="size-10 sm:size-12" src={asset(icon)} alt="" />
         </div>
         {badge && <Badge text={badge} />}
       </div>
@@ -71,7 +73,7 @@ const Card = ({
             <a
               key={i}
               className="text-sm sm:text-base font-extralight"
-              href={tag.url}
+              href={tag.url ?? tagHref(tag.text)}
             >
               #{tag.text}
             </a>
@@ -91,8 +93,8 @@ const Card = ({
       {imgUrl && (
         <img
           className="w-full max-h-48 sm:max-h-64 object-cover rounded-2xl"
-          src={imgUrl}
-          alt="Image"
+          src={asset(imgUrl)}
+          alt=""
         />
       )}
 
@@ -103,7 +105,7 @@ const Card = ({
           ))}
         </div>
       )}
-      {kind === "reaction" && <ReactionBar />}
+      {kind === "reaction" && <ReactionBar id={title} />}
     </Container>
   );
 };

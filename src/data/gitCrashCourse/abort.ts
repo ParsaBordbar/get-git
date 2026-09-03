@@ -1,7 +1,7 @@
 const tags = [
-  { text: "git", url: "smt" },
-  { text: "abort", url: "smt" },
-  { text: "recovery", url: "smt" },
+  { text: "git" },
+  { text: "abort" },
+  { text: "recovery" },
 ];
 
 export const abort = {

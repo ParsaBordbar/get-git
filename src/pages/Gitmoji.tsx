@@ -5,6 +5,7 @@ import { gitmojiType } from "../types/types";
 import { neighbours } from "../data/series";
 import SideNav from "../components/SideNav";
 import Badge from "../components/Badge";
+import ProgressCheck from "../components/ProgressCheck";
 
 const cardStyles = [
   "bg-candy-red",
@@ -114,6 +115,9 @@ function Gitmoji() {
         </div>
       )}
 
+      <div className="w-full max-w-xl">
+        <ProgressCheck path={pathname} next={neighbours(pathname).next} />
+      </div>
     </section>
   );
 }

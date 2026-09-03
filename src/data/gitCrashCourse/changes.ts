@@ -8,15 +8,12 @@ export const changes = {
       tags: [
         {
           text: "git",
-          url: "smt",
         },
         {
           text: "github",
-          url: "smt",
         },
         {
           text: "version_control",
-          url: "smt",
         },
       ],
       icon: "./assets/git.svg",
@@ -38,15 +35,12 @@ Files in Git can be in **two stages**:
       tags: [
         {
           text: "git",
-          url: "smt",
         },
         {
           text: "github",
-          url: "smt",
         },
         {
           text: "version_control",
-          url: "smt",
         },
       ],
       icon: "./assets/git.svg",
@@ -60,15 +54,12 @@ Files in Git can be in **two stages**:
       tags: [
         {
           text: "git",
-          url: "smt",
         },
         {
           text: "github",
-          url: "smt",
         },
         {
           text: "version_control",
-          url: "smt",
         },
       ],
       icon: "./assets/git.svg",
@@ -82,15 +73,12 @@ Files in Git can be in **two stages**:
       tags: [
         {
           text: "git",
-          url: "smt",
         },
         {
           text: "github",
-          url: "smt",
         },
         {
           text: "version_control",
-          url: "smt",
         },
       ],
       icon: "./assets/git.svg",
@@ -109,15 +97,12 @@ Files in Git can be in **two stages**:
       tags: [
         {
           text: "git",
-          url: "smt",
         },
         {
           text: "github",
-          url: "smt",
         },
         {
           text: "version_control",
-          url: "smt",
         },
       ],
       icon: "./assets/git.svg",
@@ -143,15 +128,12 @@ Files in Git can be in **two stages**:
       tags: [
         {
           text: "git",
-          url: "smt",
         },
         {
           text: "github",
-          url: "smt",
         },
         {
           text: "version_control",
-          url: "smt",
         },
       ],
       icon: "./assets/git.svg",
@@ -177,15 +159,12 @@ Files in Git can be in **two stages**:
       tags: [
         {
           text: "git",
-          url: "smt",
         },
         {
           text: "github",
-          url: "smt",
         },
         {
           text: "version_control",
-          url: "smt",
         },
       ],
       desc: `
@@ -206,15 +185,12 @@ Includes commit message, author, date, and code changes.`,
       tags: [
         {
           text: "git",
-          url: "smt",
         },
         {
           text: "github",
-          url: "smt",
         },
         {
           text: "version_control",
-          url: "smt",
         },
       ],
       desc: `We can Compere states and stages and commits with diff command!
@@ -241,15 +217,12 @@ Includes commit message, author, date, and code changes.`,
       tags: [
         {
           text: "git",
-          url: "smt",
         },
         {
           text: "github",
-          url: "smt",
         },
         {
           text: "version_control",
-          url: "smt",
         },
       ],
       desc: `So ... how we can Ctrl + z when we messed-up ?
@@ -264,15 +237,12 @@ Includes commit message, author, date, and code changes.`,
       tags: [
         {
           text: "git",
-          url: "smt",
         },
         {
           text: "github",
-          url: "smt",
         },
         {
           text: "version_control",
-          url: "smt",
         },
       ],
       desc: `We can **restore** a file or multiple files to previous committed versions.

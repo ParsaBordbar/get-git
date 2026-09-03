@@ -1,7 +1,16 @@
 import { seriesEntry } from "../../data/series";
 import Badge from "../Badge";
+import { asset } from "../../lib/asset";
 
-function SeriesTile({ entry, index }: { entry: seriesEntry; index: number }) {
+function SeriesTile({
+  entry,
+  index,
+  done = false,
+}: {
+  entry: seriesEntry;
+  index: number;
+  done?: boolean;
+}) {
   return (
     <a
       href={entry.path}
@@ -13,9 +22,21 @@ function SeriesTile({ entry, index }: { entry: seriesEntry; index: number }) {
     >
       <div className="flex items-start justify-between gap-3">
         <span className="flex size-14 items-center justify-center rounded-full bg-white border-4 border-stone-850">
-          <img className="size-8" src={entry.icon} alt="" />
+          <img className="size-8" src={asset(entry.icon)} alt="" />
         </span>
-        {entry.badge && <Badge text={entry.badge} />}
+        <span className="flex items-center gap-2">
+          {entry.badge && <Badge text={entry.badge} />}
+          {done && (
+            <span
+              aria-label="Done"
+              className="flex size-8 items-center justify-center rounded-full bg-white border-2 border-stone-850"
+            >
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={3.5} strokeLinecap="round" strokeLinejoin="round" className="size-5" aria-hidden="true">
+                <path d="M5 12.5l4.5 4.5L19 7" />
+              </svg>
+            </span>
+          )}
+        </span>
       </div>
 
       <div className="mt-auto flex flex-col gap-1">

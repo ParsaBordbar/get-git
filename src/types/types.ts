@@ -1,6 +1,6 @@
 export interface tagType {
   text: string;
-  url: string;
+  url?: string;
 }
 
 export interface copyType {
@@ -35,6 +35,9 @@ export interface navigationType {
 export interface ReactionButtonType {
   style?: string;
   text: string;
+  count?: number;
+  active?: boolean;
+  onClick?: () => void;
 }
 
 export interface gitmojiType {

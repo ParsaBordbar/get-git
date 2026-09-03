@@ -8,15 +8,12 @@ export const committing = {
       tags: [
         {
           text: "git",
-          url: "smt",
         },
         {
           text: "github",
-          url: "smt",
         },
         {
           text: "version_control",
-          url: "smt",
         },
       ],
       icon: "./assets/git.svg",
@@ -46,15 +43,12 @@ export const committing = {
       tags: [
         {
           text: "git",
-          url: "smt",
         },
         {
           text: "github",
-          url: "smt",
         },
         {
           text: "version_control",
-          url: "smt",
         },
       ],
       icon: "./assets/git.svg",
@@ -81,15 +75,12 @@ export const committing = {
       tags: [
         {
           text: "git",
-          url: "smt",
         },
         {
           text: "github",
-          url: "smt",
         },
         {
           text: "version_control",
-          url: "smt",
         },
       ],
       icon: "./assets/git.svg",
@@ -105,15 +96,12 @@ export const committing = {
       tags: [
         {
           text: "git",
-          url: "smt",
         },
         {
           text: "github",
-          url: "smt",
         },
         {
           text: "version_control",
-          url: "smt",
         },
       ],
       icon: "./assets/git.svg",
@@ -135,15 +123,12 @@ export const committing = {
       tags: [
         {
           text: "git",
-          url: "smt",
         },
         {
           text: "github",
-          url: "smt",
         },
         {
           text: "version_control",
-          url: "smt",
         },
       ],
       icon: "./assets/git.svg",
@@ -169,15 +154,12 @@ export const committing = {
       tags: [
         {
           text: "git",
-          url: "smt",
         },
         {
           text: "github",
-          url: "smt",
         },
         {
           text: "version_control",
-          url: "smt",
         },
       ],
       icon: "./assets/git.svg",
@@ -206,15 +188,12 @@ export const committing = {
       tags: [
         {
           text: "git",
-          url: "smt",
         },
         {
           text: "github",
-          url: "smt",
         },
         {
           text: "version_control",
-          url: "smt",
         },
       ],
       icon: "./assets/git.svg",
@@ -242,15 +221,12 @@ export const committing = {
       tags: [
         {
           text: "git",
-          url: "smt",
         },
         {
           text: "github",
-          url: "smt",
         },
         {
           text: "version_control",
-          url: "smt",
         },
       ],
       icon: "./assets/git.svg",
