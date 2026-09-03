@@ -1,0 +1,31 @@
+{
+  "id": "/get-git/",
+  "name": "Get Git",
+  "short_name": "getGit",
+  "description": "Learn Git & Github!",
+  "start_url": "/get-git/",
+  "scope": "/get-git/",
+  "display": "standalone",
+  "background_color": "#fef5cc",
+  "theme_color": "#f75b2b",
+  "icons": [
+    {
+      "src": "/get-git/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/get-git/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/get-git/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
