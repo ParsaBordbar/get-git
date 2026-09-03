@@ -55,6 +55,12 @@ a:hover {
 }
 
 @theme {
+  --color-stone-850: #0f172a;
+  --font-display: poppins, system-ui, sans-serif;
+  --font-body: rubik, system-ui, sans-serif;
+}
+
+@theme {
   --color-arctic-black: #040404;
   --color-arctic-white: #f9f9f9;
 }
