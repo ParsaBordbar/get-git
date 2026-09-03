@@ -32,9 +32,7 @@ function localStore(key = "get-git:reactions"): reactionStore {
     cache = next;
     try {
       localStorage.setItem(key, JSON.stringify(next));
-    } catch {
-      /* storage unavailable: reactions live in memory for this session only */
-    }
+    } catch {}
     listeners.forEach((l) => l());
   };
 

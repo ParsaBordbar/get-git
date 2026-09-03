@@ -23,9 +23,7 @@ function write(next: Record<string, string>) {
   cache = next;
   try {
     localStorage.setItem(KEY, JSON.stringify(next));
-  } catch {
-    /* storage unavailable: progress lives in memory for this session only */
-  }
+  } catch {}
   listeners.forEach((l) => l());
 }
 
