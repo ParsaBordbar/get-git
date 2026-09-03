@@ -6,7 +6,6 @@ function Changes() {
     <section className="w-full col-span-full flex justify-center items-center">
       <FlashCardSeries
         data={changes.cards}
-        navigation={{ prev: "basics", next: "commit" }}
       />
     </section>
   );

@@ -9,7 +9,6 @@ function Branches() {
     >
       <FlashCardSeries
         data={branches.cards}
-        navigation={{ prev: "commit", next: "github" }}
       />
     </section>
   );

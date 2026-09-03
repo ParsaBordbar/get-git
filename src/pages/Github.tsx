@@ -6,7 +6,6 @@ function Github() {
     <section className="w-full col-span-full flex justify-center items-center">
       <FlashCardSeries
         data={gitGithubConcepts.cards}
-        navigation={{ prev: "branches", next: "conflicts" }}
       />
     </section>
   );

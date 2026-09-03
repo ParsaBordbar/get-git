@@ -22,6 +22,7 @@ export interface cardType {
   imgUrl?: string;
   code?: copyType[];
   style: string;
+  badge?: string;
   animate?: boolean;
   type?: "candy" | "artic" | "terminal"
 }
@@ -34,4 +35,10 @@ export interface navigationType {
 export interface ReactionButtonType {
   style?: string;
   text: string;
+}
+
+export interface gitmojiType {
+  emoji: string;
+  code: string;
+  desc: string;
 }

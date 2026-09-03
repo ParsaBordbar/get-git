@@ -6,7 +6,6 @@ function Commit() {
     <section className="w-full col-span-full flex justify-center items-center">
       <FlashCardSeries
         data={committing.cards}
-        navigation={{ prev: "changes", next: "branches" }}
       />
     </section>
   );

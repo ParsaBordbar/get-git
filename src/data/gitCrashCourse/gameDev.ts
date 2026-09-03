@@ -1,10 +1,6 @@
 export const gameDevCompleteSeries = {
   pageName: "Game Development – Complete Beginner Programmer Series",
   cards: [
-    /* =========================
-       INTRO & FOUNDATIONS
-    ========================== */
-
     {
       title: "Game Development",
       kind: "default",
@@ -102,11 +98,6 @@ These are logical systems before they are art.
       icon: "./assets/controller.png",
       style: "bg-[#FFA9E8]",
     },
-
-    /* =========================
-       HISTORY & INDUSTRY
-    ========================== */
-
     {
       title: "Short History of Games",
       kind: "reaction",
@@ -181,11 +172,6 @@ Highly structured development.
       icon: "./assets/controller.png",
       style: "bg-[#7B9D7C]",
     },
-
-    /* =========================
-       ENGINE VS FRAMEWORK
-    ========================== */
-
     {
       title: "Game Engine vs Framework",
       kind: "reaction",
@@ -221,11 +207,6 @@ You learn how games actually work.
       icon: "./assets/controller.png",
       style: "bg-[#07AF57]",
     },
-
-    /* =========================
-       LOVE2D (DEEP DIVE)
-    ========================== */
-
     {
       title: "LÖVE (LOVE2D)",
       kind: "reaction",
@@ -322,11 +303,6 @@ These transfer directly to Godot & Unity.
       icon: "./assets/controller.png",
       style: "bg-[#07AF57]",
     },
-
-    /* =========================
-       OTHER FRAMEWORKS
-    ========================== */
-
     {
       title: "pygame",
       kind: "reaction",
@@ -403,11 +379,6 @@ Best by goal:
       icon: "./assets/controller.png",
       style: "bg-[#7B9D7C]",
     },
-
-    /* =========================
-       COMMON TRAPS & ROADMAP
-    ========================== */
-
     {
       title: "Common Beginner Traps",
       kind: "reaction",

@@ -4,6 +4,8 @@ import { cardType, copyType, tagType } from "../../types/types";
 import MarkDownText from "../MarkDown";
 import CopyCommand from "../CopyCommand";
 import ReactionBar from "../ReactionBar";
+import Badge from "../Badge";
+
 
 const Card = ({
   title,
@@ -13,6 +15,7 @@ const Card = ({
   icon,
   imgUrl,
   style,
+  badge,
   code,
   animate = true,
 }: cardType) => {
@@ -38,12 +41,12 @@ const Card = ({
 
   return (
     <Container
-      className={`${style} w-[92%] sm:w-[22rem] md:w-[28rem] lg:w-[32rem] 
+      className={`${style} w-[92%] sm:w-88 md:w-md lg:w-lg
         flex flex-col col-span-full m-4 me-10 text-slate-900 overflow-hidden
         gap-4 sm:gap-5 md:gap-6
         rounded-tr-4xl rounded-b-4xl rounded-tl-lg 
         p-4 sm:p-6 md:p-8 justify-center
-        border-2 border-x-4 border-t-4 border-b-[16px] border-stone-850`}
+        border-2 border-x-4 border-t-4 border-b-16 border-stone-850`}
       {...(!isMobile &&
         animate && {
           initial: "offscreen",
@@ -52,8 +55,11 @@ const Card = ({
           variants: cardVariantsDesktop,
         })}
     >
-      <div className="flex justify-start items-end rounded-full p-2 bg-white w-fit border-4 border-stone-850">
-        <img className="size-10 sm:size-12" src={icon} alt="Icon" />
+      <div className="flex items-center justify-between gap-3">
+        <div className="flex justify-start items-end rounded-full p-2 bg-white w-fit border-4 border-stone-850">
+          <img className="size-10 sm:size-12" src={icon} alt="Icon" />
+        </div>
+        {badge && <Badge text={badge} />}
       </div>
 
       <div className="flex flex-col gap-2 sm:gap-3">

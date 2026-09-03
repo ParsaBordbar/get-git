@@ -6,7 +6,6 @@ function Conflicts() {
     <section className="w-full col-span-full flex justify-center items-center">
       <FlashCardSeries
         data={gitConflictCard.cards}
-        navigation={{ prev: "github", next: "/get-git/" }}
       />
     </section>
   );

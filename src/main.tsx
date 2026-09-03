@@ -10,3 +10,18 @@ createRoot(document.getElementById("root")!).render(
     </main>
   </StrictMode>,
 );
+
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker
+      .register(`${import.meta.env.BASE_URL}sw.js`, {
+        scope: import.meta.env.BASE_URL,
+      })
+      .then((registration) => {
+        console.log("Service Worker registered:", registration);
+      })
+      .catch((error) => {
+        console.log("Service Worker registration failed:", error);
+      });
+  });
+}

@@ -78,12 +78,6 @@ export const committing = {
 
     Refs #101: Fixes the issue with incorrect
     pricing.`,
-      // code: [
-      //   {
-      //     text:'<type>[scope]: <description>',
-      //     label:'Header of a good commit:'
-      //   },
-      // ],
       tags: [
         {
           text: "git",
@@ -99,7 +93,6 @@ export const committing = {
         },
       ],
       icon: "./assets/git.svg",
-      // imgUrl: './assets/commitEx.png',
       style: "bg-candy-green-light",
     },
 

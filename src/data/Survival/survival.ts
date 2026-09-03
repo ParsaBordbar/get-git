@@ -9,7 +9,7 @@ export const survival = [
       { "text": "جنگ", "url": "smt" }
     ],
     "icon": "./assets/aid.png",
-    "style": "bg-[#F75B2B]", // candy-red
+    "style": "bg-[#F75B2B]",
     "animate": true
   },
   {
@@ -22,7 +22,7 @@ export const survival = [
       { "text": "آمادگی", "url": "smt" }
     ],
     "icon": "./assets/aid.png",
-    "style": "bg-[#FFE87E]", // candy-yellow
+    "style": "bg-[#FFE87E]",
     "animate": true
   },
     {
@@ -34,7 +34,7 @@ export const survival = [
       { "text": "چک_لیست", "url": "smt" }
     ],
     "icon": "./assets/aid.png",
-    "style": "bg-[#F7BD1D]", // candy-yellow-sharp
+    "style": "bg-[#F7BD1D]",
   },
   {
     "title": "تعیین پناهگاه امن در منزل و محل کار",
@@ -46,7 +46,7 @@ export const survival = [
       { "text": "ساختمان", "url": "smt" }
     ],
     "icon": "./assets/aid.png",
-    "style": "bg-candy-pink-strawberry", // candy-blue
+    "style": "bg-candy-pink-strawberry",
   },
     {
     "title": "رسیدگی ویژه به سالمندان و افراد ناتوان",
@@ -58,7 +58,7 @@ export const survival = [
         {"text": "مراقبت_ویژه", "url": "smt"}
     ],
     "icon": "./assets/aid.png",
-    "style": "bg-[#04BFA4]", // candy-teal
+    "style": "bg-[#04BFA4]",
   },
   {
     "title": "برنامه‌ریزی ارتباطات و آموزش خانواده",
@@ -76,7 +76,7 @@ export const survival = [
       { "text": "آموزش", "url": "smt" }
     ],
     "icon": "./assets/aid.png",
-    "style": "bg-[#C5C6FF]", // candy-blue-sky
+    "style": "bg-[#C5C6FF]",
   },
   {
     "title": "هنگام حمله موشکی یا پهپادی (داخل ساختمان)",
@@ -88,7 +88,7 @@ export const survival = [
       { "text": "پناهگیری", "url": "smt" }
     ],
     "icon": "./assets/aid.png",
-    "style": "bg-[#FEF5CC]", // candy-tan
+    "style": "bg-[#FEF5CC]",
   },
   {
     "title": "هنگام حمله (در فضای باز یا خودرو)",
@@ -100,7 +100,7 @@ export const survival = [
       { "text": "اقدام_فوری", "url": "smt" }
     ],
     "icon": "./assets/aid.png",
-    "style": "bg-[#6CBD45]", // candy-green-light
+    "style": "bg-[#6CBD45]",
   },
   {
     "title": "کارهایی که هنگام حمله نباید انجام داد",
@@ -111,7 +111,7 @@ export const survival = [
         {"text": "ایمنی", "url": "smt"}
     ],
     "icon": "./assets/aid.png",
-    "style": "bg-[#FFA9E8]", // candy-pink
+    "style": "bg-[#FFA9E8]",
   },
   {
     "title": "در حوادث نشت هسته‌ای یا پرتوی",
@@ -123,7 +123,7 @@ export const survival = [
       { "text": "آلودگی_رادیواکتیو", "url": "smt" }
     ],
     "icon": "./assets/aid.png",
-    "style": "bg-[#FF829D]", // candy-pink-strawberry
+    "style": "bg-[#FF829D]",
   },
   {
     "title": "مصرف آب و غذا در شرایط آلودگی پرتوی",
@@ -135,7 +135,7 @@ export const survival = [
       { "text": "آلودگی_رادیواکتیو", "url": "smt" }
     ],
     "icon": "./assets/aid.png",
-    "style": "bg-[#7B9D7C]", // candy-green-M
+    "style": "bg-[#7B9D7C]",
   },
   {
     "title": "هشدار درباره مصرف قرص ید",
@@ -147,7 +147,7 @@ export const survival = [
       { "text": "هسته‌ای", "url": "smt" }
     ],
     "icon": "./assets/aid.png",
-    "style": "bg-[#FEE9E8]", // candy-milky
+    "style": "bg-[#FEE9E8]",
   },
   {
     "title": "پس از حادثه: ایمنی و امدادرسانی اولیه",
@@ -159,7 +159,7 @@ export const survival = [
       { "text": "کمکهای_اولیه", "url": "smt" }
     ],
     "icon": "./assets/aid.png",
-    "style": "bg-[#FAD966]", // candy-yellow-warm
+    "style": "bg-[#FAD966]",
   },
   {
     "title": "بهداشت عمومی و سلامت پس از بحران",
@@ -171,7 +171,7 @@ export const survival = [
       { "text": "سلامت", "url": "smt" }
     ],
     "icon": "./assets/aid.png",
-    "style": "bg-candy-pink", // candy-blue
+    "style": "bg-candy-pink",
   },
   {
     "title": "حمایت روانی و بازگشت به زندگی عادی",
@@ -183,7 +183,7 @@ export const survival = [
       { "text": "سلامت_روان", "url": "smt" }
     ],
     "icon": "./assets/aid.png",
-    "style": "bg-[#6CBD45]", // candy-green-light
+    "style": "bg-[#6CBD45]",
   },
     {
     "title": "تکنیک‌های آرام‌سازی روانی",
@@ -195,6 +195,6 @@ export const survival = [
       {"text": "سلامت_روان", "url": "smt"}
     ],
     "icon": "./assets/aid.png",
-    "style": "bg-[#C5C6FF]", // candy-blue-sky
+    "style": "bg-[#C5C6FF]",
   }
 ]

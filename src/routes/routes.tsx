@@ -9,6 +9,11 @@ import Conflicts from "../pages/Conflicts";
 import Github from "../pages/Github";
 import GameDev from "../pages/GameDev";
 import Delta from "../pages/Delta";
+import Merge from "../pages/Merge";
+import Abort from "../pages/Abort";
+import Stash from "../pages/Stash";
+import Undo from "../pages/Undo";
+import Gitmoji from "../pages/Gitmoji";
 
 
 interface Route {
@@ -29,4 +34,9 @@ export const routes: Route[] = [
   { path: "/get-git/conflicts", Component: Conflicts },
   { path: "/get-git/game-dev", Component: GameDev },
   { path: "/get-git/delta", Component: Delta },
+  { path: "/get-git/merge", Component: Merge },
+  { path: "/get-git/abort", Component: Abort },
+  { path: "/get-git/stash", Component: Stash },
+  { path: "/get-git/undo", Component: Undo },
+  { path: "/get-git/gitmoji", Component: Gitmoji },
 ];

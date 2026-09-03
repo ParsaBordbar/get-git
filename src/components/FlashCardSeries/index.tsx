@@ -1,6 +1,9 @@
+import { useLocation } from "react-router-dom";
 import { cardType, navigationType } from "../../types/types";
-import Abstract from "../Abstract";
+import { neighbours } from "../../data/series";
 import Card from "../Card";
+import SideNav from "../SideNav";
+import Abstract from "../Abstract";
 
 function FlashCardSeries({
   data,
@@ -12,24 +15,14 @@ function FlashCardSeries({
   dir?: "ltr" | "rtl";
 }) {
   const isRTL = dir === "rtl";
+  const { pathname } = useLocation();
+  const nav = navigation ?? neighbours(pathname);
 
   return (
-    <section
-      dir={dir}
-      className="grid xl:grid-cols-12 w-fit col-span-full"
-    >
-      {/* PREVIOUS */}
-      <a
-        href={navigation?.prev}
-        className={`fixed lg:flex hidden cursor-pointer text-5xl !text-slate-400 top-1/2 -translate-y-1/2 py-2 px-4
-          ${isRTL ? "right-0 me-5" : "left-0 ms-5"}
-          glass-gradient glass-text glass-border glass-bg rounded-full glass-btn hover:glass-btn-hover glass-base`}
-        aria-label="Previous"
-      >
-        {isRTL ? ">" : "<"}
-      </a>
+    <section dir={dir} className="grid xl:grid-cols-12 w-fit col-span-full">
+      <SideNav navigation={nav} isRTL={isRTL} />
 
-      <Abstract count={data.length} />
+      <Abstract count={data.length} isRTL={isRTL} />
 
       <div className="grid justify-center col-span-10 gap-5">
         {data.map((card: cardType, index) => (
@@ -47,17 +40,6 @@ function FlashCardSeries({
           />
         ))}
       </div>
-
-      {/* NEXT */}
-      <a
-        href={navigation?.next}
-        className={`fixed lg:flex hidden cursor-pointer text-5xl !text-slate-400 top-1/2 -translate-y-1/2 py-2 px-4
-          ${isRTL ? "left-0 ms-5" : "right-0 me-5"}
-          glass-gradient glass-text glass-border glass-bg rounded-full glass-btn hover:glass-btn-hover glass-base`}
-        aria-label="Next"
-      >
-        {isRTL ? "<" : ">"}
-      </a>
     </section>
   );
 }
