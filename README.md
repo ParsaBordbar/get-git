@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/dbd97beb-f3e1-4ef9-824b-ba7ae54696f7)
+<img width="1470" height="956" alt="1405-06-12_18-26-45" src="https://github.com/user-attachments/assets/c5e8dad4-84e9-4497-b3cd-36e09e344355" />
 
 # Get-Git
 
