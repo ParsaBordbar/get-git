@@ -1,0 +1,82 @@
+import type { seriesEntry } from "../series";
+
+export const faSeries: seriesEntry[] = [
+  {
+    path: "/get-git/fa/basics",
+    title: "مبانی",
+    desc: "چیزهایی که هر روز استفاده می‌کنی.",
+    icon: "./assets/git.svg",
+    style: "bg-candy-red",
+  },
+  {
+    path: "/get-git/fa/changes",
+    title: "تغییرات",
+    desc: "تغییرات را دنبال کن.",
+    icon: "./assets/git.svg",
+    style: "bg-candy-blue-sky",
+  },
+  {
+    path: "/get-git/fa/commit",
+    title: "کامیت",
+    desc: "چطور پیام کامیت خوب بنویسی.",
+    icon: "./assets/git.svg",
+    style: "bg-candy-yellow",
+  },
+  {
+    path: "/get-git/fa/branches",
+    title: "برنچ‌ها",
+    desc: "ساختن و مدیریت برنچ‌ها.",
+    icon: "./assets/git.svg",
+    style: "bg-candy-teal",
+  },
+  {
+    path: "/get-git/fa/merge",
+    title: "مرج",
+    desc: "دو برنچ را دوباره به هم برگردان.",
+    icon: "./assets/git.svg",
+    style: "bg-candy-green-light",
+  },
+  {
+    path: "/get-git/fa/github",
+    title: "گیت‌هاب",
+    desc: "همکاری و فضای ابری.",
+    icon: "./assets/github.svg",
+    style: "bg-candy-yellow-sharp",
+  },
+  {
+    path: "/get-git/fa/conflicts",
+    title: "کانفلیکت‌ها",
+    desc: "وقتی تداخل پیش می‌آید چه کار کنی.",
+    icon: "./assets/git.svg",
+    style: "bg-candy-pink",
+  },
+  {
+    path: "/get-git/fa/abort",
+    title: "لغو",
+    desc: "از یک دستور خراب برگرد عقب.",
+    icon: "./assets/git.svg",
+    style: "bg-candy-pink-strawberry",
+  },
+  {
+    path: "/get-git/fa/stash",
+    title: "استش",
+    desc: "کارت را موقت پارک کن و بعداً برگرد.",
+    icon: "./assets/git.svg",
+    style: "bg-candy-milky",
+  },
+  {
+    path: "/get-git/fa/undo",
+    title: "برگرداندن",
+    desc: "چیزی را خراب کردی؟ گیت احتمالاً هنوز داردش.",
+    icon: "./assets/git.svg",
+    style: "bg-candy-green-M",
+  },
+  {
+    path: "/get-git/fa/gitmoji",
+    title: "گیت‌موجی",
+    desc: "با یک ایموجی در کامیت بگو چه کار می‌کند.",
+    icon: "./assets/git.svg",
+    style: "bg-candy-yellow-warm",
+    badge: "EXTRA",
+  },
+];

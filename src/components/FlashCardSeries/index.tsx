@@ -1,6 +1,7 @@
 import { useLocation } from "react-router-dom";
 import { cardType, navigationType } from "../../types/types";
 import { neighbours } from "../../data/series";
+import { useLang } from "../../i18n/lang";
 import Card from "../Card";
 import SideNav from "../SideNav";
 import Abstract from "../Abstract";
@@ -9,18 +10,20 @@ import ProgressCheck from "../ProgressCheck";
 function FlashCardSeries({
   data,
   navigation,
-  dir = "ltr",
+  dir,
 }: {
   data: cardType[];
   navigation?: navigationType;
   dir?: "ltr" | "rtl";
 }) {
-  const isRTL = dir === "rtl";
+  const { lang } = useLang();
+  const resolvedDir = dir ?? (lang === "fa" ? "rtl" : "ltr");
+  const isRTL = resolvedDir === "rtl";
   const { pathname } = useLocation();
   const nav = navigation ?? neighbours(pathname);
 
   return (
-    <section dir={dir} className="grid xl:grid-cols-12 w-fit col-span-full">
+    <section dir={resolvedDir} className="grid xl:grid-cols-12 w-fit col-span-full">
       <SideNav navigation={nav} isRTL={isRTL} />
 
       <Abstract count={data.length} isRTL={isRTL} />

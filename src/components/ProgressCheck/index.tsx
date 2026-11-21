@@ -1,10 +1,12 @@
 import { entryFor } from "../../data/series";
+import { useLang, localizedPath } from "../../i18n/lang";
 import { useProgress } from "../../lib/progress";
 
 function ProgressCheck({ path, next }: { path: string; next?: string }) {
+  const { lang, t } = useLang();
   const { isDone, toggle } = useProgress();
   const done = isDone(path);
-  const title = entryFor(path)?.title ?? "this series";
+  const title = entryFor(path)?.title ?? t("progress.thisSeries");
   const nextEntry = next ? entryFor(next) : undefined;
 
   return (
@@ -33,7 +35,7 @@ function ProgressCheck({ path, next }: { path: string; next?: string }) {
           )}
         </span>
         <span className="text-xl sm:text-2xl font-bold">
-          {done ? `${title} done` : `Mark ${title} as done`}
+          {done ? t("progress.done", { title }) : t("progress.markDone", { title })}
         </span>
       </label>
 
@@ -44,17 +46,17 @@ function ProgressCheck({ path, next }: { path: string; next?: string }) {
             border-2 border-x-4 border-t-2 border-b-[6px] border-stone-850
             transition-transform duration-100 hover:-translate-y-0.5 active:translate-y-0.5"
         >
-          Next: {nextEntry.title}
+          {t("progress.next", { title: nextEntry.title })}
         </a>
       )}
       {done && !nextEntry && (
         <a
-          href="/get-git/"
+          href={localizedPath("/get-git/", lang)}
           className="w-fit rounded-2xl bg-white px-4 py-2 font-bold !text-slate-900
             border-2 border-x-4 border-t-2 border-b-[6px] border-stone-850
             transition-transform duration-100 hover:-translate-y-0.5 active:translate-y-0.5"
         >
-          Back to all series
+          {t("progress.backAll")}
         </a>
       )}
     </div>

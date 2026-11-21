@@ -1,4 +1,5 @@
 import { motion, useScroll } from "motion/react";
+import { useLang, localizedPath } from "../../i18n/lang";
 
 type AbstractProps = {
   count: number;
@@ -6,6 +7,7 @@ type AbstractProps = {
 };
 
 const Abstract = ({ count, isRTL = false }: AbstractProps) => {
+  const { lang, t } = useLang();
   const { scrollYProgress } = useScroll();
 
   return (
@@ -27,15 +29,15 @@ const Abstract = ({ count, isRTL = false }: AbstractProps) => {
           border-2 border-x-4 border-t-2 border-b-[6px] border-stone-850
           ${isRTL ? "right-6 lg:right-10" : "left-6 lg:left-10"}`}
       >
-        <span>{count} cards</span>
+        <span>{count === 1 ? t("abstract.cardsOne") : t("abstract.cards", { count })}</span>
         <span className="font-medium text-stone-500">
-          {Math.floor(count * 1.2)} min
+          {t("abstract.min", { min: Math.floor(count * 1.2) })}
         </span>
       </div>
 
       <a
-        href="/get-git/"
-        aria-label="Home"
+        href={localizedPath("/get-git/", lang)}
+        aria-label={t("abstract.home")}
         className={`fixed top-22 z-40 hidden w-40 items-center justify-center gap-2
           rounded-2xl bg-white px-3 py-2 text-sm font-bold !text-slate-900 md:flex
           border-2 border-x-4 border-t-2 border-b-[6px] border-stone-850
@@ -56,7 +58,7 @@ const Abstract = ({ count, isRTL = false }: AbstractProps) => {
           <path d="M3 11.5 12 4l9 7.5" />
           <path d="M5 10.5V20h5v-5h4v5h5v-9.5" />
         </svg>
-        <span>Home</span>
+        <span>{t("abstract.home")}</span>
       </a>
     </>
   );
