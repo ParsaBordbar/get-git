@@ -12,7 +12,7 @@ Get-Git is bilingual: English (default) and Persian (فارسی).
 
 - Switch language with the button in the bottom corner, or open the Persian version directly at `/get-git/fa/`. Your choice is remembered in the browser.
 - The Persian version translates all card content, series, the Gitmoji reference, and the UI into Persian (right-to-left, Vazirmatn font). Git commands and technical terms (commit, branch, merge, …) stay in English.
-- Persian translation by [Ahura](https://github.com/Ahurabyte) ([ahurabyte.github.io/get-git](https://ahurabyte.github.io/get-git/)).
+- Persian translation by [Ahura](https://github.com/Ahuracode) ([ahuracode.github.io/get-git](https://ahuracode.github.io/get-git/)).
 
 ## Features
 
