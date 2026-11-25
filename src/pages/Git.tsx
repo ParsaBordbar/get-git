@@ -1,7 +1,8 @@
 import SeriesTile from "../components/SeriesTile";
-import { series, seriesEntry } from "../data/series";
+import { seriesFor, seriesEntry } from "../data/series";
 import { useProgress } from "../lib/progress";
 import { asset } from "../lib/asset";
+import { useLang, localizedPath } from "../i18n/lang";
 
 const stickers = [
   { style: "bg-candy-red", rotate: "-rotate-12", offset: "translate-y-6" },
@@ -10,6 +11,8 @@ const stickers = [
 ];
 
 function Git() {
+  const { lang, t } = useLang();
+  const series = seriesFor(lang);
   const { count, isDone, reset } = useProgress();
   const next = series.find((s) => !isDone(s.path)) ?? series[0];
 
@@ -18,12 +21,10 @@ function Git() {
       <section className="grid items-center gap-10 py-12 sm:py-16 lg:grid-cols-[1fr_auto] lg:py-24">
         <div className="max-w-xl">
           <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl leading-[0.95] text-slate-900">
-            Git, one card at a time.
+            {t("home.title")}
           </h1>
           <p className="mt-6 text-lg sm:text-xl font-medium text-slate-900/80">
-            {series.length} short series that take you from your first commit
-            to untangling a merge conflict. Pick one, flip through, done in a
-            few minutes.
+            {t("home.subtitle", { count: series.length })}
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <a
@@ -32,24 +33,24 @@ function Git() {
                 border-2 border-x-4 border-t-2 border-b-[6px] border-stone-850
                 transition-transform duration-100 hover:-translate-y-0.5 active:translate-y-0.5"
             >
-              {count === 0 ? `Start with ${next.title}` : count === series.length ? "Start over" : `Continue with ${next.title}`}
+              {count === 0 ? t("home.startWith", { title: next.title }) : count === series.length ? t("home.startOver") : t("home.continueWith", { title: next.title })}
             </a>
             <a
               href="https://github.com/ParsaBordbar/get-git"
               className="font-bold !text-slate-900 underline decoration-2 underline-offset-4"
             >
-              Source on GitHub
+              {t("home.sourceGithub")}
             </a>
           </div>
           {count > 0 && (
             <p className="mt-5 font-medium text-slate-900/70">
-              {count} of {series.length} series done.{" "}
+              {t("home.progress", { count, total: series.length })}{" "}
               <button
                 type="button"
                 onClick={reset}
                 className="cursor-pointer font-bold !text-slate-900 underline decoration-2 underline-offset-4"
               >
-                Reset progress
+                {t("home.resetProgress")}
               </button>
             </p>
           )}
@@ -71,7 +72,7 @@ function Git() {
         </div>
       </section>
 
-      <section aria-label="Series">
+      <section aria-label={t("home.seriesLabel")}>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {series.map((entry: seriesEntry, i: number) => (
             <SeriesTile key={entry.path} entry={entry} index={i} done={isDone(entry.path)} />
@@ -80,13 +81,13 @@ function Git() {
       </section>
 
       <footer className="mt-16 flex flex-wrap items-center justify-between gap-3 border-t-4 border-stone-850 pt-6 font-medium text-slate-900/70">
-        <span>Made by Parsa Bordbar</span>
+        <span>{t("home.madeBy")}</span>
         <span className="flex gap-5">
-          <a href="/get-git/tags" className="!text-slate-900 underline decoration-2 underline-offset-4">
-            Browse by tag
+          <a href={localizedPath("/get-git/tags", lang)} className="!text-slate-900 underline decoration-2 underline-offset-4">
+            {t("home.browseTags")}
           </a>
           <a href="https://github.com/ParsaBordbar/get-git" className="!text-slate-900 underline decoration-2 underline-offset-4">
-            GitHub
+            {t("home.githubLink")}
           </a>
         </span>
       </footer>

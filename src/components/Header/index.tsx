@@ -1,16 +1,19 @@
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
-import { series } from "../../data/series";
+import { seriesFor } from "../../data/series";
+import { useLang, localizedPath } from "../../i18n/lang";
 import { useProgress } from "../../lib/progress";
 import { asset } from "../../lib/asset";
-
-const HOME = "/get-git/";
 
 function Header() {
   const [open, setOpen] = useState(false);
   const { pathname } = useLocation();
+  const { lang, t } = useLang();
   const { isDone } = useProgress();
   const current = pathname.replace(/\/$/, "");
+  const series = seriesFor(lang);
+  const HOME = localizedPath("/get-git/", lang);
+  const TAGS = localizedPath("/get-git/tags", lang);
 
   useEffect(() => setOpen(false), [pathname]);
 
@@ -26,7 +29,7 @@ function Header() {
     };
   }, [open]);
 
-  const isHome = current === "" || current === "/get-git";
+  const isHome = current === "" || current === HOME.replace(/\/$/, "");
 
   return (
     <header className="sticky top-0 z-50 md:hidden">
@@ -40,7 +43,7 @@ function Header() {
 
         <button
           type="button"
-          aria-label={open ? "Close menu" : "Open menu"}
+          aria-label={open ? t("header.closeMenu") : t("header.openMenu")}
           aria-expanded={open}
           aria-controls="site-menu"
           onClick={() => setOpen((o) => !o)}
@@ -85,7 +88,7 @@ function Header() {
               className={`flex items-center gap-3 rounded-2xl px-4 py-3 font-bold border-2 border-b-[5px] border-stone-850
                 ${isHome ? "bg-stone-850 !text-white" : "bg-white !text-slate-900"}`}
             >
-              Home
+              {t("header.home")}
             </a>
           </li>
           {series.map((s, i) => {
@@ -107,7 +110,7 @@ function Header() {
                   <span className="ms-auto flex items-center gap-2 text-xs font-medium opacity-60">
                     {s.badge}
                     {isDone(s.path) && (
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={3.5} strokeLinecap="round" strokeLinejoin="round" className="size-4 opacity-100" aria-label="Done">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={3.5} strokeLinecap="round" strokeLinejoin="round" className="size-4 opacity-100" aria-label={t("header.done")}>
                         <path d="M5 12.5l4.5 4.5L19 7" />
                       </svg>
                     )}
@@ -118,12 +121,12 @@ function Header() {
           })}
           <li>
             <a
-              href="/get-git/tags"
-              aria-current={current.startsWith("/get-git/tags") ? "page" : undefined}
+              href={TAGS}
+              aria-current={current.startsWith(TAGS) ? "page" : undefined}
               className={`mt-2 flex items-center gap-3 rounded-2xl px-4 py-3 font-bold border-2 border-b-[5px] border-stone-850
-                ${current.startsWith("/get-git/tags") ? "bg-stone-850 !text-white" : "bg-white !text-slate-900"}`}
+                ${current.startsWith(TAGS) ? "bg-stone-850 !text-white" : "bg-white !text-slate-900"}`}
             >
-              Browse by tag
+              {t("header.browseTags")}
             </a>
           </li>
         </ul>

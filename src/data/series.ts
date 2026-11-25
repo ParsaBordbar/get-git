@@ -1,3 +1,6 @@
+import { faSeries } from "./fa/series";
+import type { Lang } from "../i18n/lang";
+
 export interface seriesEntry {
   path: string;
   title: string;
@@ -87,17 +90,32 @@ export const series: seriesEntry[] = [
     badge: "EXTRA",
   },
 ];
+export function seriesFor(lang: Lang): seriesEntry[] {
+  return lang === "fa" ? faSeries : series;
+}
+
+function listForPath(path: string): {
+  list: seriesEntry[];
+  home: string;
+} {
+  const clean = path.replace(/\/$/, "");
+  const isFa = clean === "/get-git/fa" || clean.startsWith("/get-git/fa/");
+  return isFa ? { list: faSeries, home: "/get-git/fa" } : { list: series, home: "/get-git/" };
+}
+
 export function neighbours(path: string) {
   const clean = path.replace(/\/$/, "");
-  const i = series.findIndex((s) => s.path.replace(/\/$/, "") === clean);
+  const { list, home } = listForPath(path);
+  const i = list.findIndex((s) => s.path.replace(/\/$/, "") === clean);
   if (i === -1) return {};
   return {
-    prev: i > 0 ? series[i - 1].path : "/get-git/",
-    next: i < series.length - 1 ? series[i + 1].path : "/get-git/",
+    prev: i > 0 ? list[i - 1].path : home,
+    next: i < list.length - 1 ? list[i + 1].path : home,
   };
 }
 
 export function entryFor(path: string) {
   const clean = path.replace(/\/$/, "");
-  return series.find((s) => s.path.replace(/\/$/, "") === clean);
+  const { list } = listForPath(path);
+  return list.find((s) => s.path.replace(/\/$/, "") === clean);
 }

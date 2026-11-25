@@ -60,6 +60,14 @@ a:hover {
   --font-body: rubik, system-ui, sans-serif;
 }
 
+/* Persian (RTL) locale: Vazirmatn first, Latin fonts as fallback. */
+html[dir="rtl"] {
+  font-family: "Vazirmatn Variable", rubik, system-ui, Avenir, Helvetica,
+    Arial, sans-serif;
+  --font-display: "Vazirmatn Variable", poppins, system-ui, sans-serif;
+  --font-body: "Vazirmatn Variable", rubik, system-ui, sans-serif;
+}
+
 @theme {
   --color-arctic-black: #040404;
   --color-arctic-white: #f9f9f9;

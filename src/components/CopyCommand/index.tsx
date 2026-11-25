@@ -1,8 +1,10 @@
 import { useState } from "react";
 import { copyType } from "../../types/types";
+import { useLang } from "../../i18n/lang";
 import MarkDownText from "../MarkDown";
 
 const CopyCommand = ({ label, text }: copyType) => {
+  const { t } = useLang();
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
@@ -35,7 +37,7 @@ const CopyCommand = ({ label, text }: copyType) => {
           className="cursor-pointer bg-gray-300 rounded-xl sm:rounded-2xl 
           px-2 sm:px-3 h-8 sm:h-9 text-sm sm:text-base flex-shrink-0"
         >
-          {copied ? "Copied!" : "Copy"}
+          {copied ? t("copy.copied") : t("copy.copy")}
         </button>
       </div>
     </div>

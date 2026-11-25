@@ -1,4 +1,5 @@
 import { seriesEntry } from "../../data/series";
+import { useLang } from "../../i18n/lang";
 import Badge from "../Badge";
 import { asset } from "../../lib/asset";
 
@@ -11,6 +12,7 @@ function SeriesTile({
   index: number;
   done?: boolean;
 }) {
+  const { t } = useLang();
   return (
     <a
       href={entry.path}
@@ -28,7 +30,7 @@ function SeriesTile({
           {entry.badge && <Badge text={entry.badge} />}
           {done && (
             <span
-              aria-label="Done"
+              aria-label={t("tile.done")}
               className="flex size-8 items-center justify-center rounded-full bg-white border-2 border-stone-850"
             >
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={3.5} strokeLinecap="round" strokeLinejoin="round" className="size-5" aria-hidden="true">
